@@ -88,10 +88,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Screens\" />
+    <Folder Include="Screens\TestList\" />
+    <Folder Include="Screens\TestDetails\" />
+    <Folder Include="Screens\Home\" />
+    <Folder Include="Screens\Info\" />
+    <Folder Include="MainTabBar\" />
+    <Folder Include="Screens\TestList\Cells\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Screens\TestList\TestListController.xib" />
+    <InterfaceDefinition Include="Screens\TestDetails\TestDetailsController.xib" />
+    <InterfaceDefinition Include="Screens\Home\HomeController.xib" />
+    <InterfaceDefinition Include="Screens\Info\InfoController.xib" />
+    <InterfaceDefinition Include="Screens\TestList\Cells\TestListCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -100,9 +111,29 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="Screens\TestList\TestListController.cs" />
+    <Compile Include="Screens\TestList\TestListController.designer.cs">
+      <DependentUpon>TestListController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TestDetails\TestDetailsController.cs" />
+    <Compile Include="Screens\TestDetails\TestDetailsController.designer.cs">
+      <DependentUpon>TestDetailsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainTabBar\MainTabBarController.cs" />
+    <Compile Include="MainTabBar\MainTabBarController.designer.cs">
+      <DependentUpon>MainTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Home\HomeController.cs" />
+    <Compile Include="Screens\Home\HomeController.designer.cs">
+      <DependentUpon>HomeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Info\InfoController.cs" />
+    <Compile Include="Screens\Info\InfoController.designer.cs">
+      <DependentUpon>InfoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TestList\Cells\TestListCell.cs" />
+    <Compile Include="Screens\TestList\Cells\TestListCell.designer.cs">
+      <DependentUpon>TestListCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
