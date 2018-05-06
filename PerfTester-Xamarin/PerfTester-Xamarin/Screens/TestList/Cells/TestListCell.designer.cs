@@ -19,7 +19,7 @@ namespace PerfTesterXamarin.Screens.TestList.Cells
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIImageView ImageView { get; set; }
+        UIKit.UIImageView TestImage { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -32,9 +32,9 @@ namespace PerfTesterXamarin.Screens.TestList.Cells
                 DescLabel = null;
             }
 
-            if (ImageView != null) {
-                ImageView.Dispose ();
-                ImageView = null;
+            if (TestImage != null) {
+                TestImage.Dispose ();
+                TestImage = null;
             }
 
             if (TitleLabel != null) {

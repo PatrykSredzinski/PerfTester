@@ -16,7 +16,7 @@ namespace PerfTesterXamarin.Screens.Info
             base.ViewDidLoad();
         }
 
-        private void SetupNavigationBar()
+        void SetupNavigationBar()
         {
             Title = "Info";
         }

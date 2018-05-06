@@ -1,13 +1,15 @@
 ﻿using System;
-
+using PerfTesterXamarin.Models;
 using UIKit;
 
 namespace PerfTesterXamarin.Screens.TestDetails
 {
     public partial class TestDetailsController : UIViewController
     {
-        public TestDetailsController() : base("TestDetailsController", null)
+        Test Test;
+        public TestDetailsController(Test test) : base("TestDetailsController", null)
         {
+            Test = test;
             SetupNavigationBar();
         }
 
@@ -16,9 +18,9 @@ namespace PerfTesterXamarin.Screens.TestDetails
             base.ViewDidLoad();
         }
 
-        private void SetupNavigationBar()
+        void SetupNavigationBar()
         {
-            Title = "Details";
+            Title = Test.Title;
         }
     }
 }

@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoTouch.NUnitLite" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -95,6 +96,7 @@
     <Folder Include="Screens\Info\" />
     <Folder Include="MainTabBar\" />
     <Folder Include="Screens\TestList\Cells\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -135,6 +137,10 @@
     <Compile Include="Screens\TestList\Cells\TestListCell.designer.cs">
       <DependentUpon>TestListCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\HeavyCalculationsSyncTest.cs" />
+    <Compile Include="Screens\TestList\TestListViewModel.cs" />
+    <Compile Include="Models\HeavyCalculationsAsyncTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

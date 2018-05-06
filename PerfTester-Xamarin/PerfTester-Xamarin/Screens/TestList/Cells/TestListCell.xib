@@ -13,20 +13,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="391" height="177"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="132" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                        <rect key="frame" x="177.5" y="0.0" width="213.5" height="157"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="132" translatesAutoresizingMaskIntoConstraints="NO">
+                        <rect key="frame" x="50" y="0.0" width="341" height="161.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" id="133" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000">
-                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="177.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="177.5"/>
                         <constraints>
-                            <constraint id="141" firstAttribute="width" secondItem="133" secondAttribute="height" multiplier="1:1"/>
+                            <constraint id="324" firstItem="133" firstAttribute="width" constant="50"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="134" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES">
-                        <rect key="frame" x="177.5" y="157" width="213.5" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="134" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" numberOfLines="0">
+                        <rect key="frame" x="50" y="161.5" width="341" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
             </tableViewCellContentView>
             <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
             <connections>
-                <outlet property="ImageView" destination="133" id="name-outlet-133"/>
+                <outlet property="TestImage" destination="133" id="name-outlet-133"/>
                 <outlet property="TitleLabel" destination="132" id="name-outlet-132"/>
                 <outlet property="DescLabel" destination="134" id="name-outlet-134"/>
             </connections>

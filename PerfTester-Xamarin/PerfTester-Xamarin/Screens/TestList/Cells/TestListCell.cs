@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Foundation;
+using PerfTesterXamarin.Models;
 using UIKit;
 
 namespace PerfTesterXamarin.Screens.TestList.Cells
@@ -20,9 +21,10 @@ namespace PerfTesterXamarin.Screens.TestList.Cells
             // Note: this .ctor should not contain any initialization logic.
         }
 
-        public void setupCellWithTest(string test)
+        public void setupCellWithTest(Test test)
         {
-            TitleLabel.Text = test;
+            TitleLabel.Text = test.Title;
+            DescLabel.Text = test.Description;
         }
     }
 }

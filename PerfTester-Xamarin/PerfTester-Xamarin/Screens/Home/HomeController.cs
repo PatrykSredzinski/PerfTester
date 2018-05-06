@@ -16,7 +16,7 @@ namespace PerfTesterXamarin.Screens.Home
             base.ViewDidLoad();
         }
 
-        private void SetupNavigationBar()
+        void SetupNavigationBar()
         {
             Title = "Home";
         }
