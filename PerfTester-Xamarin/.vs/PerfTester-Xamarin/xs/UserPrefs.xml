@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
+  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.408D3741-6156-489E-8BBF-68C380A12888" FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin>
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/AppDelegate.cs">
+    <Files>
+      <File FileName="PerfTester-Xamarin/AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
