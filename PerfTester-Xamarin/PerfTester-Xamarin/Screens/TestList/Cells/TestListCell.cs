@@ -24,7 +24,7 @@ namespace PerfTesterXamarin.Screens.TestList.Cells
         public void setupCellWithTest(Test test)
         {
             TitleLabel.Text = test.Title;
-            DescLabel.Text = test.Description;
+            DescLabel.Text = test.Desc;
             TestImage.Image = new UIImage(test.ImageName);
         }
     }

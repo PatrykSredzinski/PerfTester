@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleName</key>
-	<string>PerfTester-Xamarin</string>
+	<string>PerfTester</string>
 	<key>CFBundleIdentifier</key>
 	<string>private.PerfTester-Xamarin</string>
 	<key>CFBundleShortVersionString</key>

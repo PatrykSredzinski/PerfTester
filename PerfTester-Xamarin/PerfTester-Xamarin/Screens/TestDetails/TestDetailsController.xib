@@ -42,6 +42,9 @@
                         <constraint id="960" firstItem="945" firstAttribute="height" constant="50"/>
                         <constraint id="975" firstItem="945" firstAttribute="width" constant="150"/>
                     </constraints>
+                    <connections>
+                        <action selector="startAction:" destination="-1" id="1187" eventType="touchUpInside"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

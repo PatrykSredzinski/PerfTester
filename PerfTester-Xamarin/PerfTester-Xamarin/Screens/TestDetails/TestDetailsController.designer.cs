@@ -26,6 +26,10 @@ namespace PerfTesterXamarin.Screens.TestDetails
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel TestTitleLabel { get; set; }
 
+        [Action ("startAction:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void startAction (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (TestDetailsLabel != null) {

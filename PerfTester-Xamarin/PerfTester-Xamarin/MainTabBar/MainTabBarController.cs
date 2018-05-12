@@ -22,7 +22,6 @@ namespace PerfTesterXamarin.Screens.MainTabBar
         private void SetupTabBar()
         {
             base.TabBar.Translucent = false;
-            base.TabBar.TintColor = UIColor.FromRGB(79, 233, 10);
         }
 
         private void SetupControllers() 

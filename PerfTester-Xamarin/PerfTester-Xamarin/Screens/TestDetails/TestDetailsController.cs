@@ -26,8 +26,13 @@ namespace PerfTesterXamarin.Screens.TestDetails
 
         void SetupView(Test test) {
             TestTitleLabel.Text = test.Title;
-            TestDetailsLabel.Text = test.Description;
+            TestDetailsLabel.Text = test.Desc;
             TestImageView.Image = new UIImage(test.ImageName);
+        }
+
+        partial void startAction(UIButton sender)
+        {
+            this.Test.Start();
         }
     }
 }

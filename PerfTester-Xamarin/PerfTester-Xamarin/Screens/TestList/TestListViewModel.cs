@@ -8,7 +8,8 @@ namespace PerfTesterXamarin.Screens.TestList
         public Test[] AllTests = new Test[] 
         { 
             new HeavyCalculationsSyncTest(),
-            new HeavyCalculationsAsyncTest()
+            new HeavyCalculationsAsyncTest(),
+            new DatabaseCreationTest()
         };
     }
 }
