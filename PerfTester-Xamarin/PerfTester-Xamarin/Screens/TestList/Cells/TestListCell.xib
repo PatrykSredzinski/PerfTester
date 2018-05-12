@@ -13,20 +13,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="391" height="177"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="132" translatesAutoresizingMaskIntoConstraints="NO">
-                        <rect key="frame" x="50" y="0.0" width="341" height="161.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="132" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000">
+                        <rect key="frame" x="82" y="8" width="301" height="137.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" id="133" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="177.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" id="133" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="Tests/list.png">
+                        <rect key="frame" x="16" y="0.0" width="50" height="177.5"/>
                         <constraints>
                             <constraint id="324" firstItem="133" firstAttribute="width" constant="50"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="134" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" numberOfLines="0">
-                        <rect key="frame" x="50" y="161.5" width="341" height="16"/>
+                        <rect key="frame" x="82" y="153.5" width="301" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,15 +34,15 @@
                 </subviews>
                 <constraints>
                     <constraint id="135" firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top"/>
-                    <constraint id="136" firstItem="YTl-1W-gDM" firstAttribute="leading" secondItem="133" secondAttribute="leading"/>
+                    <constraint id="136" firstItem="YTl-1W-gDM" firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="-16"/>
                     <constraint id="137" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="133" secondAttribute="bottom"/>
-                    <constraint id="142" firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top"/>
-                    <constraint id="143" firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing"/>
-                    <constraint id="144" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="132" secondAttribute="trailing"/>
+                    <constraint id="142" firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" constant="8"/>
+                    <constraint id="143" firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing" constant="16"/>
+                    <constraint id="144" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="132" secondAttribute="trailing" constant="8"/>
                     <constraint id="146" firstItem="134" firstAttribute="leading" secondItem="132" secondAttribute="leading"/>
                     <constraint id="147" firstItem="134" firstAttribute="trailing" secondItem="132" secondAttribute="trailing"/>
-                    <constraint id="148" firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom"/>
-                    <constraint id="149" firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom"/>
+                    <constraint id="148" firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom" constant="8"/>
+                    <constraint id="149" firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" constant="8"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
@@ -53,4 +53,27 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="TabBar/homeActive.png" width="40" height="40"/>
+        <image name="TabBar/homeDefault.png" width="40" height="40"/>
+        <image name="TabBar/testActive.png" width="40" height="40"/>
+        <image name="TabBar/testDefault.png" width="40" height="40"/>
+        <image name="TabBar/userActive.png" width="40" height="40"/>
+        <image name="TabBar/userDefault.png" width="40" height="40"/>
+        <image name="Tests/list.png" width="40" height="40"/>
+        <image name="Tests/stoper.png" width="40" height="40"/>
+        <image name="Tests/database.png" width="40" height="40"/>
+        <image name="Tests/phone.png" width="40" height="40"/>
+        <image name="Tests/arrow.png" width="40" height="40"/>
+        <image name="Tests/shield.png" width="40" height="40"/>
+        <image name="Tests/calculator.png" width="40" height="40"/>
+        <image name="Tests/flow.png" width="40" height="40"/>
+        <image name="Tests/multithreading.png" width="40" height="40"/>
+        <image name="Tests/photo.png" width="40" height="40"/>
+        <image name="Tests/devices.png" width="40" height="40"/>
+        <image name="Tests/json.png" width="40" height="40"/>
+        <image name="Tests/maths.png" width="40" height="40"/>
+        <image name="Tests/clock.png" width="40" height="40"/>
+        <image name="Tests/lock.png" width="40" height="40"/>
+    </resources>
 </document>

@@ -7,7 +7,7 @@ namespace PerfTesterXamarin.Models
 
         public override string Description => "Doing a lot of math operations on a huge matrixes working on a main thread.";
 
-        public override string ImageName => "Math";
+        public override string ImageName => "Tests/maths";
 
 
         public override void OnStarted()

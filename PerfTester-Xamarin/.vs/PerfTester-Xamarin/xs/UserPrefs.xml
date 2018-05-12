@@ -1,22 +1,7 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
-  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C9CE462C-1427-47A9-B6A4-A26D1CE4A0F7" HideGettingStarted="True" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs">
-    <Files>
-      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListController.cs" Line="85" Column="41" />
-      <File FileName="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs" Line="42" Column="37" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/Cells/TestListCell.cs" Line="21" Column="10" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/Cells/TestListCell.xib" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/Cells/TestListCell.designer.cs" Line="1" Column="1" />
-      <File FileName="PerfTester-Xamarin/Models/Test.cs" Line="30" Column="1" />
-      <File FileName="PerfTester-Xamarin/Models/HeavyCalculationsSyncTest.cs" Line="19" Column="29" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="15" Column="1" />
-      <File FileName="PerfTester-Xamarin/Screens/TestDetails/TestDetailsController.cs" Line="21" Column="9" />
-      <File FileName="PerfTester-Xamarin/Screens/Home/HomeController.cs" Line="19" Column="9" />
-      <File FileName="PerfTester-Xamarin/Screens/Info/InfoController.cs" Line="19" Column="9" />
-      <File FileName="PerfTester-Xamarin/Models/HeavyCalculationsAsyncTest.cs" Line="4" Column="5" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2b737d9cefd8fcf04e32042200d9dad3ca924be5" HideGettingStarted="True" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

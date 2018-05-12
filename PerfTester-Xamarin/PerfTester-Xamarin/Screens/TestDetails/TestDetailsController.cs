@@ -16,11 +16,18 @@ namespace PerfTesterXamarin.Screens.TestDetails
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            SetupView(this.Test);
         }
 
         void SetupNavigationBar()
         {
             Title = Test.Title;
+        }
+
+        void SetupView(Test test) {
+            TestTitleLabel.Text = test.Title;
+            TestDetailsLabel.Text = test.Description;
+            TestImageView.Image = new UIImage(test.ImageName);
         }
     }
 }

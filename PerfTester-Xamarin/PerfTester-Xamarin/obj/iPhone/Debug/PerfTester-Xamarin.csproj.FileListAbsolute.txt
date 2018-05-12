@@ -1,0 +1,9 @@
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/bin/iPhone/Debug/PerfTester-Xamarin.exe
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/bin/iPhone/Debug/PerfTester-Xamarin.pdb
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/actool/_PartialAppManifest.items
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/optimized/
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/PerfTester-Xamarin.csproj.CoreCompileInputs.cache
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/PerfTester-Xamarin.exe
+/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/PerfTester-Xamarin.pdb

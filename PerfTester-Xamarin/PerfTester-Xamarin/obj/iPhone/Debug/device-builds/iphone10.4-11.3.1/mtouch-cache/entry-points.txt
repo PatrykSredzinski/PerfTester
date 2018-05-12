@@ -1,0 +1,9 @@
+Function=xamarin_timezone_get_data
+	/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/mtouch-cache/Link/mscorlib.dll
+Function=UIApplicationMain
+	/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/obj/iPhone/Debug/device-builds/iphone10.4-11.3.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=mono_pmip

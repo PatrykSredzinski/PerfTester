@@ -14,8 +14,34 @@ namespace PerfTesterXamarin.Screens.TestDetails
     [Register ("TestDetailsController")]
     partial class TestDetailsController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel TestDetailsLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView TestImageView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel TestTitleLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (TestDetailsLabel != null) {
+                TestDetailsLabel.Dispose ();
+                TestDetailsLabel = null;
+            }
+
+            if (TestImageView != null) {
+                TestImageView.Dispose ();
+                TestImageView = null;
+            }
+
+            if (TestTitleLabel != null) {
+                TestTitleLabel.Dispose ();
+                TestTitleLabel = null;
+            }
         }
     }
 }
