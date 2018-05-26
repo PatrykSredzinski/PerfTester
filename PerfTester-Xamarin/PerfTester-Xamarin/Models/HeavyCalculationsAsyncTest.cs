@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using CoreFoundation;
 
 namespace PerfTesterXamarin.Models
 {
@@ -15,14 +16,14 @@ namespace PerfTesterXamarin.Models
 
         public override void DoJob(double param)
         {
-            InvokeInBackground(() =>
+            DispatchQueue.GetGlobalQueue(DispatchQueuePriority.High).DispatchAsync(() =>
             {
                 for (long i = 0; i < param; i++)
                 {
                     double[] testArr = new double[] { 32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535 };
                     double[] finArr = MultiplyArray(testArr);
                 }
-                InvokeOnMainThread(() =>
+                DispatchQueue.MainQueue.DispatchAsync(() =>
                 {
                     base.FinishJob(param);
                 });

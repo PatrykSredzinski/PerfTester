@@ -15,10 +15,6 @@ namespace PerfTesterXamarin.Screens.TestDetails.Cells
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIActivityIndicatorView ActivitySpinner { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel IndexLabel { get; set; }
 
         [Outlet]
@@ -31,11 +27,6 @@ namespace PerfTesterXamarin.Screens.TestDetails.Cells
 
         void ReleaseDesignerOutlets ()
         {
-            if (ActivitySpinner != null) {
-                ActivitySpinner.Dispose ();
-                ActivitySpinner = null;
-            }
-
             if (IndexLabel != null) {
                 IndexLabel.Dispose ();
                 IndexLabel = null;

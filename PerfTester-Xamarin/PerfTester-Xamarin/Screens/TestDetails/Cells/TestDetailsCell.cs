@@ -25,23 +25,15 @@ namespace PerfTesterXamarin.Screens.TestDetails.Cells
         {
             IndexLabel.Text = String.Format("{0})", index);
             TitleLabel.Text = String.Format("Variant: {0}", test.Parameters[index]);
-            if (test.IsTestRunning != null && index < test.IsTestRunning.Length && test.IsTestRunning[index])
-            {
-                TimeLabel.Text = null;   
-                TimeLabel.Hidden = true; 
-                ActivitySpinner.Hidden = false;
-            }
-            else if (test.Results != null && index < test.Results.Length && test.Results[index] > 0)
+            if (test.Results != null && index < test.Results.Length && test.Results[index] > 0)
             {
                 TimeLabel.Text = String.Format("{0}ms", test.Results[index]);
                 TimeLabel.Hidden = false;
-                ActivitySpinner.Hidden = true;
             }
             else
             {
                 TimeLabel.Text = null;
                 TimeLabel.Hidden = true;
-                ActivitySpinner.Hidden = true;
             }
         }
     }
