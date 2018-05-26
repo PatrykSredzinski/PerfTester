@@ -23,7 +23,7 @@ namespace PerfTesterXamarin.Screens.TestDetails.Cells
 
         public void SetupCellWithTest(Test test, int index)
         {
-            IndexLabel.Text = String.Format("{0})", index);
+            IndexLabel.Text = String.Format("{0})", index+1);
             TitleLabel.Text = String.Format("Variant: {0}", test.Parameters[index]);
             if (test.Results != null && index < test.Results.Length && test.Results[index] > 0)
             {

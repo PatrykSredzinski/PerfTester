@@ -41,7 +41,7 @@ namespace PerfTesterXamarin.Models
 
         void StartSingleVariantAsync(int paramIndex)
         {
-            var afterTime = new DispatchTime(DispatchTime.Now, (long)0.1 * NSEC_PER_SEC);
+            var afterTime = new DispatchTime(DispatchTime.Now, (long)1 * NSEC_PER_SEC);
             DispatchQueue.MainQueue.DispatchAfter(afterTime, () => 
             {
                 StartSingleVariant(paramIndex);
