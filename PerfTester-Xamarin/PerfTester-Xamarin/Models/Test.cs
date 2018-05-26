@@ -12,52 +12,52 @@ namespace PerfTesterXamarin.Models
         public abstract string ImageName { get; }
         public abstract double[] Parameters { get; }
 
-        Dictionary<double, Stopwatch> Timers = new Dictionary<double, Stopwatch>();
-        int CurrentParam = 0;
-        bool IsTestRunning = false;
+        public abstract void Prepare(double param);
+        public abstract void DoJob(double param);
 
-        public void Start()
+        public long[] Results;
+        public bool[] IsTestRunning;
+
+        Stopwatch[] Timers;
+        Action<long[]> SingleTestDone;
+        int CurrentParam = 0;
+
+        public void Start(Action<long[]> SingleDoneBlock)
         {
-            if (IsTestRunning) 
-            {
-                return;
-            }
+            SingleTestDone = SingleDoneBlock;
             ResetTest();
-            IsTestRunning = true;
-            StartSingle(CurrentParam);
+            StartSingleVariant(CurrentParam);
+        }
+
+        void ResetTest()
+        {
+            CurrentParam = 0;
+            Results = new long[Parameters.Length];
+            IsTestRunning = new bool[Parameters.Length];
+            Timers = new Stopwatch[Parameters.Length];
+        }
+
+        void StartSingleVariant(int paramIndex)
+        {
+            if (paramIndex < Parameters.Length)
+            {
+                IsTestRunning[paramIndex] = true;
+                double param = Parameters[paramIndex];
+                Prepare(param);
+                Timers[paramIndex] = Stopwatch.StartNew();
+                DoJob(param);
+            }
         }
 
         public void FinishJob(double param)
         {
-            Timers[param].Stop();
-            JobFinished(param, Timers[param].ElapsedMilliseconds);
+            Timers[CurrentParam].Stop();
+            Results[CurrentParam] = Timers[CurrentParam].ElapsedMilliseconds;
+            IsTestRunning[CurrentParam] = false;
+            SingleTestDone(Results);
             CurrentParam++;
-            StartSingle(CurrentParam);
+            StartSingleVariant(CurrentParam);
         }
 
-        public abstract void Prepare(double param);
-        public abstract void DoJob(double param);
-        public abstract void JobFinished(double param, long miliseconds);
-        public abstract void TestDone();
-
-        void ResetTest() 
-        {
-            Timers.Clear();
-            CurrentParam = 0;
-        }
-
-        void StartSingle(int paramIndex)
-        {
-            if (paramIndex < Parameters.Length)
-            {
-                double param = Parameters[paramIndex];
-                Prepare(param);
-                Timers.Add(param, Stopwatch.StartNew());
-                DoJob(param);
-            } else {
-                TestDone();
-                IsTestRunning = false;
-            }
-        }
     }
 }

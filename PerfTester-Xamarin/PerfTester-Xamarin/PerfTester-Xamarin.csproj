@@ -123,6 +123,7 @@
     <Folder Include="Resources\TabBar\" />
     <Folder Include="Resources\Tests\" />
     <Folder Include="Models\Helpers\" />
+    <Folder Include="Screens\TestDetails\Cells\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -131,6 +132,7 @@
     <InterfaceDefinition Include="Screens\Home\HomeController.xib" />
     <InterfaceDefinition Include="Screens\Info\InfoController.xib" />
     <InterfaceDefinition Include="Screens\TestList\Cells\TestListCell.xib" />
+    <InterfaceDefinition Include="Screens\TestDetails\Cells\TestDetailsCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -172,6 +174,10 @@
     <Compile Include="Models\DatabaseCreationTest.cs" />
     <Compile Include="Models\Helpers\Dog.cs" />
     <Compile Include="Models\Helpers\Person.cs" />
+    <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.cs" />
+    <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.designer.cs">
+      <DependentUpon>TestDetailsCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\TabBar\homeActive.png" />

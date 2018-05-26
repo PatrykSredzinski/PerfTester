@@ -15,29 +15,18 @@ namespace PerfTesterXamarin.Models
 
         public override void DoJob(double param)
         {
-            InvokeInBackground(() => {
+            InvokeInBackground(() =>
+            {
                 for (long i = 0; i < param; i++)
                 {
                     double[] testArr = new double[] { 32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535 };
                     double[] finArr = MultiplyArray(testArr);
                 }
-                InvokeOnMainThread(() => {
+                InvokeOnMainThread(() =>
+                {
                     base.FinishJob(param);
                 });
-            }
-            );
-
-
-        }
-
-        public override void JobFinished(double param, long miliseconds)
-        {
-            Console.WriteLine(String.Format("Param: {0} | Time: {1}ms", param, miliseconds));
-        }
-
-        public override void TestDone()
-        {
-            Console.WriteLine(String.Format("Tests Done"));
+            });
         }
 
         double[] MultiplyArray(double[] array)

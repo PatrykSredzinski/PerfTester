@@ -4,6 +4,12 @@ extern void *mono_aot_module_PerfTester_Xamarin_info;
 extern void *mono_aot_module_mscorlib_info;
 extern void *mono_aot_module_Xamarin_iOS_info;
 extern void *mono_aot_module_System_info;
+extern void *mono_aot_module_System_Core_info;
+extern void *mono_aot_module_Realm_info;
+extern void *mono_aot_module_Remotion_Linq_info;
+extern void *mono_aot_module_System_Reflection_TypeExtensions_info;
+extern void *mono_aot_module_System_Runtime_CompilerServices_Unsafe_info;
+extern void *mono_aot_module_Realm_DataBinding_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -11,6 +17,12 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_mscorlib_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_iOS_info);
 	mono_aot_register_module (mono_aot_module_System_info);
+	mono_aot_register_module (mono_aot_module_System_Core_info);
+	mono_aot_register_module (mono_aot_module_Realm_info);
+	mono_aot_register_module (mono_aot_module_Remotion_Linq_info);
+	mono_aot_register_module (mono_aot_module_System_Reflection_TypeExtensions_info);
+	mono_aot_register_module (mono_aot_module_System_Runtime_CompilerServices_Unsafe_info);
+	mono_aot_register_module (mono_aot_module_Realm_DataBinding_info);
 
 }
 

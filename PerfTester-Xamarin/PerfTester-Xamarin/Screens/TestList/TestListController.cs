@@ -51,7 +51,7 @@ namespace PerfTesterXamarin
         {
             var test = ViewModel.AllTests[indexPath.Row];
             TestListCell cell = (TestListCell)tableView.DequeueReusableCell("TestListCell");
-            cell.setupCellWithTest(test);
+            cell.SetupCellWithTest(test);
             return cell;
         }
 

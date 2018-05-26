@@ -21,7 +21,7 @@ namespace PerfTesterXamarin.Screens.TestList.Cells
             // Note: this .ctor should not contain any initialization logic.
         }
 
-        public void setupCellWithTest(Test test)
+        public void SetupCellWithTest(Test test)
         {
             TitleLabel.Text = test.Title;
             DescLabel.Text = test.Desc;

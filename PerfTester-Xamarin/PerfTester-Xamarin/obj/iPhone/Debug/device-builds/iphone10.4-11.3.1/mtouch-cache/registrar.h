@@ -15,15 +15,22 @@
 
 @class __MonoMac_NSActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
+@class UIKit_UIControlEventProxy;
 @class AppDelegate;
 @class TestListController;
 @class PerfTesterXamarin_TestListDataSource;
 @class PerfTesterXamarin_TestListDelegate;
+@class PerfTesterXamarin_Models_Test;
+@class PerfTesterXamarin_Models_HeavyCalculationsSyncTest;
 @class TestListCell;
 @class InfoController;
 @class HomeController;
 @class MainTabBarController;
 @class TestDetailsController;
+@class PerfTesterXamarin_Screens_TestDetails_TestDetailsDataSource;
+@class TestDetailsCell;
+@class PerfTesterXamarin_Models_HeavyCalculationsAsyncTest;
+@class PerfTesterXamarin_Models_DatabaseCreationTest;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
@@ -66,6 +73,21 @@
 	-(void) setTableView:(UITableView *)p0;
 	-(void) viewDidLoad;
 	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface PerfTesterXamarin_Models_Test : NSObject {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface PerfTesterXamarin_Models_HeavyCalculationsSyncTest : PerfTesterXamarin_Models_Test {
+}
 	-(id) init;
 @end
 
@@ -122,12 +144,56 @@
 
 @interface TestDetailsController : UIViewController {
 }
+	@property (nonatomic, assign) UITableView * TableView;
+	@property (nonatomic, assign) UILabel * TestDetailsLabel;
+	@property (nonatomic, assign) UIImageView * TestImageView;
+	@property (nonatomic, assign) UILabel * TestTitleLabel;
 	-(void) release;
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UITableView *) TableView;
+	-(void) setTableView:(UITableView *)p0;
+	-(UILabel *) TestDetailsLabel;
+	-(void) setTestDetailsLabel:(UILabel *)p0;
+	-(UIImageView *) TestImageView;
+	-(void) setTestImageView:(UIImageView *)p0;
+	-(UILabel *) TestTitleLabel;
+	-(void) setTestTitleLabel:(UILabel *)p0;
 	-(void) viewDidLoad;
+	-(void) startAction:(UIButton *)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface TestDetailsCell : UITableViewCell {
+}
+	@property (nonatomic, assign) UIActivityIndicatorView * ActivitySpinner;
+	@property (nonatomic, assign) UILabel * IndexLabel;
+	@property (nonatomic, assign) UILabel * TimeLabel;
+	@property (nonatomic, assign) UILabel * TitleLabel;
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UIActivityIndicatorView *) ActivitySpinner;
+	-(void) setActivitySpinner:(UIActivityIndicatorView *)p0;
+	-(UILabel *) IndexLabel;
+	-(void) setIndexLabel:(UILabel *)p0;
+	-(UILabel *) TimeLabel;
+	-(void) setTimeLabel:(UILabel *)p0;
+	-(UILabel *) TitleLabel;
+	-(void) setTitleLabel:(UILabel *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface PerfTesterXamarin_Models_HeavyCalculationsAsyncTest : PerfTesterXamarin_Models_Test {
+}
+	-(id) init;
+@end
+
+@interface PerfTesterXamarin_Models_DatabaseCreationTest : PerfTesterXamarin_Models_Test {
+}
+	-(id) init;
 @end
 
 @interface __UIGestureRecognizerToken : NSObject {

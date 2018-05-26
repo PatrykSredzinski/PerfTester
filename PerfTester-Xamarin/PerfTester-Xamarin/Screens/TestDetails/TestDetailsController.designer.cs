@@ -16,6 +16,10 @@ namespace PerfTesterXamarin.Screens.TestDetails
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView TableView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel TestDetailsLabel { get; set; }
 
         [Outlet]
@@ -32,6 +36,11 @@ namespace PerfTesterXamarin.Screens.TestDetails
 
         void ReleaseDesignerOutlets ()
         {
+            if (TableView != null) {
+                TableView.Dispose ();
+                TableView = null;
+            }
+
             if (TestDetailsLabel != null) {
                 TestDetailsLabel.Dispose ();
                 TestDetailsLabel = null;

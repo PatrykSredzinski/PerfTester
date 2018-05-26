@@ -1,44 +1,18 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
-  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C9CE462C-1427-47A9-B6A4-A26D1CE4A0F7" HideGettingStarted="True" automaticSigning="True">
+  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2b737d9cefd8fcf04e32042200d9dad3ca924be5" HideGettingStarted="True" automaticSigning="True">
     <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="466RZ399WS" TeamId="B78XDNYG5Q" />
   </MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin>
   <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs">
     <Files>
-      <File FileName="PerfTester-Xamarin/Models/Test.cs" Line="60" Column="14" />
-      <File FileName="PerfTester-Xamarin/Models/DatabaseCreationTest.cs" Line="12" Column="114" />
-      <File FileName="PerfTester-Xamarin/Models/HeavyCalculationsAsyncTest.cs" Line="1" Column="1" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="12" Column="39" />
-      <File FileName="PerfTester-Xamarin/Models/Helpers/Dog.cs" Line="10" Column="9" />
-      <File FileName="PerfTester-Xamarin/Models/Helpers/Person.cs" Line="9" Column="24" />
-      <File FileName="PerfTester-Xamarin/Models/HeavyCalculationsSyncTest.cs" Line="16" Column="22" />
-      <File FileName="PerfTester-Xamarin/FodyWeavers.xml" Line="4" Column="11" />
-      <File FileName="PerfTester-Xamarin/Info.plist" />
-      <File FileName="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs" Line="24" Column="19" />
+      <File FileName="PerfTester-Xamarin/Models/DatabaseCreationTest.cs" Line="37" Column="27" />
+      <File FileName="PerfTester-Xamarin/Models/Test.cs" Line="46" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/HeavyCalculationsAsyncTest.cs" Line="26" Column="18" />
+      <File FileName="PerfTester-Xamarin/Screens/TestDetails/TestDetailsController.cs" Line="52" Column="27" />
+      <File FileName="PerfTester-Xamarin/Screens/TestDetails/Cells/TestDetailsCell.cs" Line="32" Column="48" />
+      <File FileName="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs" Line="56" Column="25" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="PerfTester-Xamarin" expanded="True">
-            <Node name="PerfTester-Xamarin" expanded="True">
-              <Node name="MainTabBar" expanded="True">
-                <Node name="MainTabBarController.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True">
-                <Node name="Helpers" expanded="True" />
-              </Node>
-              <Node name="Screens" expanded="True">
-                <Node name="TestDetails" expanded="True" />
-                <Node name="TestList" expanded="True">
-                  <Node name="Cells" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

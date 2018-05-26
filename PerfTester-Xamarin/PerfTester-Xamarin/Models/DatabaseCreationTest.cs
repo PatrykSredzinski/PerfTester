@@ -36,15 +36,5 @@ namespace PerfTesterXamarin.Models
             }
             base.FinishJob(param);
         }
-
-        public override void JobFinished(double param, long miliseconds)
-        {
-            Console.WriteLine(String.Format("Param: {0} | Time: {1}ms", param, miliseconds));
-        }
-
-        public override void TestDone()
-        {
-            Console.WriteLine(String.Format("Tests Done"));
-        }
     }
 }

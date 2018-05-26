@@ -27,6 +27,10 @@
       <Optimize>false</Optimize>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/ibtool/LaunchScreen.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/ibtool/TestDetailsCell.nib">
+      <LogicalName>TestDetailsCell.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.3/ibtool/TestDetailsController.nib">
       <LogicalName>TestDetailsController.nib</LogicalName>
       <Optimize>false</Optimize>
