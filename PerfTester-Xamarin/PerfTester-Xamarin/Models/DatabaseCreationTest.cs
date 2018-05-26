@@ -8,7 +8,7 @@ namespace PerfTesterXamarin.Models
     {
         public override string Title => "Database Creation";
         public override string Desc => "Creating a huge database and inserting rows.";
-        public override string ImageName => "Tests/database";
+        public override string ImageName => "DataBase";
         public override double[] Parameters => new double[] { 10, 20, 50, 100, 200, 500 , 1000, 2000, 5000, 10000};
 
         Realm DataBase = Realm.GetInstance();

@@ -5,7 +5,7 @@ namespace PerfTesterXamarin.Models
     {
         public override string Title => "Heavy Sync Calculations";
         public override string Desc => "Doing a lot of math operations on a huge matrixes working on a main thread.";
-        public override string ImageName => "Tests/maths";
+        public override string ImageName => "Maths";
         public override double[] Parameters => new double[] { 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000 };
 
         public override void Prepare(double param)

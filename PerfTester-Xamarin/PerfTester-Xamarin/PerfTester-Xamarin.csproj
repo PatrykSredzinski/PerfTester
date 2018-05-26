@@ -109,9 +109,50 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\HomeActive.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\HomeActive.imageset\homeActive.png" />
+    <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TestActive.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TestDefault.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\UserDefault.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\UserDefault.imageset\userDefault.png" />
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\userActive.png" />
+    <ImageAsset Include="Assets.xcassets\TestDefault.imageset\testDefault.png" />
+    <ImageAsset Include="Assets.xcassets\TestActive.imageset\testActive.png" />
+    <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\homeDefault.png" />
+    <ImageAsset Include="Assets.xcassets\Arrow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Calculator.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Clock.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\DataBase.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Devices.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Flow.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\JSON.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\List.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Lock.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Maths.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Multithreading.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Phone.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Photo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Shield.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Stoper.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Stoper.imageset\stoper.png" />
+    <ImageAsset Include="Assets.xcassets\Shield.imageset\shield.png" />
+    <ImageAsset Include="Assets.xcassets\Photo.imageset\photo.png" />
+    <ImageAsset Include="Assets.xcassets\Phone.imageset\phone.png" />
+    <ImageAsset Include="Assets.xcassets\Multithreading.imageset\multithreading.png" />
+    <ImageAsset Include="Assets.xcassets\Maths.imageset\maths.png" />
+    <ImageAsset Include="Assets.xcassets\Lock.imageset\lock.png" />
+    <ImageAsset Include="Assets.xcassets\List.imageset\list.png" />
+    <ImageAsset Include="Assets.xcassets\JSON.imageset\json.png" />
+    <ImageAsset Include="Assets.xcassets\Flow.imageset\flow.png" />
+    <ImageAsset Include="Assets.xcassets\Devices.imageset\devices.png" />
+    <ImageAsset Include="Assets.xcassets\DataBase.imageset\database.png" />
+    <ImageAsset Include="Assets.xcassets\Clock.imageset\clock.png" />
+    <ImageAsset Include="Assets.xcassets\Calculator.imageset\calculator.png" />
+    <ImageAsset Include="Assets.xcassets\Arrow.imageset\arrow.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="Screens\" />
     <Folder Include="Screens\TestList\" />
     <Folder Include="Screens\TestDetails\" />
@@ -120,10 +161,29 @@
     <Folder Include="MainTabBar\" />
     <Folder Include="Screens\TestList\Cells\" />
     <Folder Include="Models\" />
-    <Folder Include="Resources\TabBar\" />
-    <Folder Include="Resources\Tests\" />
     <Folder Include="Models\Helpers\" />
     <Folder Include="Screens\TestDetails\Cells\" />
+    <Folder Include="Assets.xcassets\HomeActive.imageset\" />
+    <Folder Include="Assets.xcassets\HomeDefault.imageset\" />
+    <Folder Include="Assets.xcassets\TestActive.imageset\" />
+    <Folder Include="Assets.xcassets\TestDefault.imageset\" />
+    <Folder Include="Assets.xcassets\UserActive.imageset\" />
+    <Folder Include="Assets.xcassets\UserDefault.imageset\" />
+    <Folder Include="Assets.xcassets\Arrow.imageset\" />
+    <Folder Include="Assets.xcassets\Calculator.imageset\" />
+    <Folder Include="Assets.xcassets\Clock.imageset\" />
+    <Folder Include="Assets.xcassets\DataBase.imageset\" />
+    <Folder Include="Assets.xcassets\Devices.imageset\" />
+    <Folder Include="Assets.xcassets\Flow.imageset\" />
+    <Folder Include="Assets.xcassets\JSON.imageset\" />
+    <Folder Include="Assets.xcassets\List.imageset\" />
+    <Folder Include="Assets.xcassets\Lock.imageset\" />
+    <Folder Include="Assets.xcassets\Maths.imageset\" />
+    <Folder Include="Assets.xcassets\Multithreading.imageset\" />
+    <Folder Include="Assets.xcassets\Phone.imageset\" />
+    <Folder Include="Assets.xcassets\Photo.imageset\" />
+    <Folder Include="Assets.xcassets\Shield.imageset\" />
+    <Folder Include="Assets.xcassets\Stoper.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -178,29 +238,6 @@
     <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.designer.cs">
       <DependentUpon>TestDetailsCell.cs</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\TabBar\homeActive.png" />
-    <BundleResource Include="Resources\TabBar\homeDefault.png" />
-    <BundleResource Include="Resources\TabBar\testActive.png" />
-    <BundleResource Include="Resources\TabBar\testDefault.png" />
-    <BundleResource Include="Resources\TabBar\userActive.png" />
-    <BundleResource Include="Resources\TabBar\userDefault.png" />
-    <BundleResource Include="Resources\Tests\list.png" />
-    <BundleResource Include="Resources\Tests\stoper.png" />
-    <BundleResource Include="Resources\Tests\database.png" />
-    <BundleResource Include="Resources\Tests\phone.png" />
-    <BundleResource Include="Resources\Tests\arrow.png" />
-    <BundleResource Include="Resources\Tests\shield.png" />
-    <BundleResource Include="Resources\Tests\calculator.png" />
-    <BundleResource Include="Resources\Tests\flow.png" />
-    <BundleResource Include="Resources\Tests\multithreading.png" />
-    <BundleResource Include="Resources\Tests\photo.png" />
-    <BundleResource Include="Resources\Tests\devices.png" />
-    <BundleResource Include="Resources\Tests\json.png" />
-    <BundleResource Include="Resources\Tests\maths.png" />
-    <BundleResource Include="Resources\Tests\clock.png" />
-    <BundleResource Include="Resources\Tests\lock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.4.6\build\Fody.targets" Condition="Exists('..\packages\Fody.2.4.6\build\Fody.targets')" />
