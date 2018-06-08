@@ -43,14 +43,14 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             testListNav.NavigationBar.Translucent = false;
 
             var infoCtrl = new InfoController();
-            var infoCtrlNav = new UINavigationController(infoCtrl);
-            infoCtrlNav.TabBarItem.SelectedImage = UIImage.FromBundle("UserActive");
-            infoCtrlNav.TabBarItem.Image = UIImage.FromBundle("UserDefault");
-            infoCtrlNav.TabBarItem.Title = "";
-            infoCtrlNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
-            infoCtrlNav.NavigationBar.Translucent = false;
+            var infoCtrl = new UINavigationController(infoCtrl);
+            infoCtrl.TabBarItem.SelectedImage = UIImage.FromBundle("UserActive");
+            infoCtrl.TabBarItem.Image = UIImage.FromBundle("UserDefault");
+            infoCtrl.TabBarItem.Title = "";
+            infoCtrl.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
+            infoCtrl.NavigationBar.Translucent = false;
 
-            var navControllers = new UINavigationController[] { homeNav, testListNav, infoCtrlNav };
+            var navControllers = new UINavigationController[] { homeNav, testListNav, infoCtrl };
             base.ViewControllers = navControllers;
 
             base.SelectedIndex = 1;

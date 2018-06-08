@@ -1,79 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" customClass="TestListCell" id="cxk-wN-pdQ" rowHeight="178">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="cxk-wN-pdQ" customClass="TestListCell">
             <rect key="frame" x="0.0" y="0.0" width="391" height="178"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
                 <rect key="frame" x="0.0" y="0.0" width="391" height="177"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="132" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="132">
                         <rect key="frame" x="82" y="8" width="301" height="137.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" id="133" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="Tests/list.png">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="Tests/list.png" translatesAutoresizingMaskIntoConstraints="NO" id="133">
                         <rect key="frame" x="16" y="0.0" width="50" height="177.5"/>
                         <constraints>
-                            <constraint id="324" firstItem="133" firstAttribute="width" constant="50"/>
+                            <constraint firstAttribute="width" constant="50" id="324"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="134" translatesAutoresizingMaskIntoConstraints="NO" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" numberOfLines="0">
-                        <rect key="frame" x="82" y="153.5" width="301" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="134">
+                        <rect key="frame" x="82" y="154" width="301" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint id="135" firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top"/>
-                    <constraint id="136" firstItem="YTl-1W-gDM" firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="-16"/>
-                    <constraint id="137" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="133" secondAttribute="bottom"/>
-                    <constraint id="142" firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" constant="8"/>
-                    <constraint id="143" firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing" constant="16"/>
-                    <constraint id="144" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="132" secondAttribute="trailing" constant="8"/>
-                    <constraint id="146" firstItem="134" firstAttribute="leading" secondItem="132" secondAttribute="leading"/>
-                    <constraint id="147" firstItem="134" firstAttribute="trailing" secondItem="132" secondAttribute="trailing"/>
-                    <constraint id="148" firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom" constant="8"/>
-                    <constraint id="149" firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" constant="8"/>
+                    <constraint firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="135"/>
+                    <constraint firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="-16" id="136"/>
+                    <constraint firstAttribute="bottom" secondItem="133" secondAttribute="bottom" id="137"/>
+                    <constraint firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" constant="8" id="142"/>
+                    <constraint firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing" constant="16" id="143"/>
+                    <constraint firstAttribute="trailing" secondItem="132" secondAttribute="trailing" constant="8" id="144"/>
+                    <constraint firstItem="134" firstAttribute="leading" secondItem="132" secondAttribute="leading" id="146"/>
+                    <constraint firstItem="134" firstAttribute="trailing" secondItem="132" secondAttribute="trailing" id="147"/>
+                    <constraint firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom" constant="8" id="148"/>
+                    <constraint firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" constant="8" id="149"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
+                <outlet property="DescLabel" destination="134" id="name-outlet-134"/>
                 <outlet property="TestImage" destination="133" id="name-outlet-133"/>
                 <outlet property="TitleLabel" destination="132" id="name-outlet-132"/>
-                <outlet property="DescLabel" destination="134" id="name-outlet-134"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="TabBar/homeActive.png" width="40" height="40"/>
-        <image name="TabBar/homeDefault.png" width="40" height="40"/>
-        <image name="TabBar/testActive.png" width="40" height="40"/>
-        <image name="TabBar/testDefault.png" width="40" height="40"/>
-        <image name="TabBar/userActive.png" width="40" height="40"/>
-        <image name="TabBar/userDefault.png" width="40" height="40"/>
-        <image name="Tests/list.png" width="40" height="40"/>
-        <image name="Tests/stoper.png" width="40" height="40"/>
-        <image name="Tests/database.png" width="40" height="40"/>
-        <image name="Tests/phone.png" width="40" height="40"/>
-        <image name="Tests/arrow.png" width="40" height="40"/>
-        <image name="Tests/shield.png" width="40" height="40"/>
-        <image name="Tests/calculator.png" width="40" height="40"/>
-        <image name="Tests/flow.png" width="40" height="40"/>
-        <image name="Tests/multithreading.png" width="40" height="40"/>
-        <image name="Tests/photo.png" width="40" height="40"/>
-        <image name="Tests/devices.png" width="40" height="40"/>
-        <image name="Tests/json.png" width="40" height="40"/>
-        <image name="Tests/maths.png" width="40" height="40"/>
-        <image name="Tests/clock.png" width="40" height="40"/>
-        <image name="Tests/lock.png" width="40" height="40"/>
+        <image name="HomeActive" width="40" height="40"/>
+        <image name="UserDefault" width="40" height="40"/>
+        <image name="UserActive" width="40" height="40"/>
+        <image name="TestDefault" width="40" height="40"/>
+        <image name="TestActive" width="40" height="40"/>
+        <image name="HomeDefault" width="40" height="40"/>
+        <image name="Stoper" width="40" height="40"/>
+        <image name="Shield" width="40" height="40"/>
+        <image name="Photo" width="40" height="40"/>
+        <image name="Phone" width="40" height="40"/>
+        <image name="Multithreading" width="40" height="40"/>
+        <image name="Maths" width="40" height="40"/>
+        <image name="Lock" width="40" height="40"/>
+        <image name="List" width="40" height="40"/>
+        <image name="JSON" width="40" height="40"/>
+        <image name="Flow" width="40" height="40"/>
+        <image name="Devices" width="40" height="40"/>
+        <image name="DataBase" width="40" height="40"/>
+        <image name="Clock" width="40" height="40"/>
+        <image name="Calculator" width="40" height="40"/>
+        <image name="Arrow" width="40" height="40"/>
     </resources>
 </document>
