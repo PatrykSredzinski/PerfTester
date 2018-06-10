@@ -24,15 +24,15 @@ class HeavyCalculationsSyncTest : Test {
     
     override func doJob(param: Double) {
         for _ in 0...Int(param) {
-            let testArr = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]
+            let testArr: [Double] = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]
             var _ = multiplyArray(testArr)
         }
         super.finishJob(param: param)
     }
     
     private func multiplyArray(_ array: [Double]) -> [Double] {
-        var finArr: [Double] = []
-        for i in 0...array.count {
+        var finArr = Array<Double>(repeating: 0, count: array.count)
+        for i in 0...array.count-1 {
             finArr[i] = array[i] * array[i]
         }
         return finArr

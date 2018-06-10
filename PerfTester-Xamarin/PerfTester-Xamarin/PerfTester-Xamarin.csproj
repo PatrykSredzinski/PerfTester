@@ -157,6 +157,7 @@
     <ImageAsset Include="Assets.xcassets\Clock.imageset\clock.png" />
     <ImageAsset Include="Assets.xcassets\Calculator.imageset\calculator.png" />
     <ImageAsset Include="Assets.xcassets\Arrow.imageset\arrow.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\visual.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Screens\" />
@@ -244,6 +245,7 @@
     <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.designer.cs">
       <DependentUpon>TestDetailsCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\SimpleLoopTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.4.6\build\Fody.targets" Condition="Exists('..\packages\Fody.2.4.6\build\Fody.targets')" />

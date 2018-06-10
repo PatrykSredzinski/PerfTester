@@ -7,7 +7,7 @@ namespace PerfTesterXamarin.Models
 {
     public abstract class Test : NSObject
     {
-        const int NSEC_PER_SEC = 1000000000;
+        const int NSEC_PER_MILISEC = 1000000;
 
         public abstract string Title { get; }
         public abstract string Desc { get; }
@@ -41,7 +41,7 @@ namespace PerfTesterXamarin.Models
 
         void StartSingleVariantAsync(int paramIndex)
         {
-            var afterTime = new DispatchTime(DispatchTime.Now, (long)1 * NSEC_PER_SEC);
+            var afterTime = new DispatchTime(DispatchTime.Now, (long)250 * NSEC_PER_MILISEC);
             DispatchQueue.MainQueue.DispatchAfter(afterTime, () => 
             {
                 StartSingleVariant(paramIndex);

@@ -10,6 +10,8 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
+    static var mainColor = UIColor(red: 0.1, green: 0.6, blue: 0.8, alpha: 1.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
@@ -18,6 +20,7 @@ class MainTabBarController: UITabBarController {
 
     private func setupTabBar() {
         tabBar.isTranslucent = false
+        tabBar.tintColor = MainTabBarController.mainColor
     }
     
     private func setupControllers() {
@@ -28,6 +31,7 @@ class MainTabBarController: UITabBarController {
         homeNav.tabBarItem.title = ""
         homeNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         homeNav.navigationBar.isTranslucent = false
+        homeNav.navigationBar.tintColor = MainTabBarController.mainColor
         
         let testListCtrl = TestListController()
         let testListNav = UINavigationController(rootViewController: testListCtrl)
@@ -36,7 +40,8 @@ class MainTabBarController: UITabBarController {
         testListNav.tabBarItem.title = ""
         testListNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         testListNav.navigationBar.isTranslucent = false
-        
+        testListNav.navigationBar.tintColor = MainTabBarController.mainColor
+
         let infoCtrl = InfoController()
         let infoNav = UINavigationController(rootViewController: infoCtrl)
         infoNav.tabBarItem.selectedImage = UIImage(named: "UserActive")
@@ -44,7 +49,8 @@ class MainTabBarController: UITabBarController {
         infoNav.tabBarItem.title = ""
         infoNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         infoNav.navigationBar.isTranslucent = false
-        
+        infoNav.navigationBar.tintColor = MainTabBarController.mainColor
+
         let navControllers = [homeNav, testListNav, infoNav]
         viewControllers = navControllers
         

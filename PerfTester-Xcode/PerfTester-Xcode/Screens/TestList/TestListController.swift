@@ -60,6 +60,8 @@ extension TestListController: UITableViewDataSource {
 extension TestListController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let test = viewModel.allTests[indexPath.row]
+        let detailsCtrl = TestDetailsController(test: test)
+        navigationController?.pushViewController(detailsCtrl, animated: true)
     }
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class TestListViewModel {
     let allTests = [
-        HeavyCalculationsSyncTest()
+        SimpleLoopTest(),
+        HeavyCalculationsSyncTest(),
+        HeavyCalculationsAsyncTest()
     ]
 }

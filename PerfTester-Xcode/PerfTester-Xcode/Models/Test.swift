@@ -9,12 +9,13 @@
 import UIKit
 
 class Test {
-    let NSEC_PER_SEC = 1000000000.0;
     
     var title: String = ""
     var desc: String = ""
     var imageName: String = ""
     var parameters: [Double] = []
+        
+    private var updateBlock: ((_ results: [Double]) -> Void)?
 
     func prepare(param: Double) {
         assertionFailure()
@@ -29,22 +30,22 @@ class Test {
     private var timers: [DispatchTime] = []
     private var currentParam = 0
     
-    func start() {
+    func start(updateBlock: @escaping (_ results: [Double]) -> Void) {
+        self.updateBlock = updateBlock
         resetTest()
-        startsingleVariantAsync(currentParam)
+        startSingleVariantAsync(currentParam)
     }
     
     private func resetTest() {
         currentParam = 0
-        results = []
-        timers = []
+        results = [Double](repeating: 0, count: parameters.count)
+        timers = [DispatchTime](repeating: DispatchTime.now(), count: parameters.count)
     }
     
-    private func startsingleVariantAsync(_ paramIndex: Int) {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0 * NSEC_PER_SEC) {
-            DispatchQueue.main.async {
-                self.startSingleVariant(paramIndex)
-            }
+    private func startSingleVariantAsync(_ paramIndex: Int) {
+        let deadlineTime = DispatchTime.now() + .milliseconds(250)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+            self.startSingleVariant(paramIndex)
         }
     }
     
@@ -56,10 +57,15 @@ class Test {
     }
     
     func finishJob(param: Double) {
-        results[currentParam] = Double((DispatchTime.now().uptimeNanoseconds - timers[currentParam].uptimeNanoseconds)/1000000)
+        let nanoSeconds = DispatchTime.now().uptimeNanoseconds - timers[currentParam].uptimeNanoseconds
+        results[currentParam] = Double(nanoSeconds)/1000000
+        
+        if let updateBlockSet = updateBlock {
+            updateBlockSet(results)
+        }
         currentParam += 1
         if currentParam < parameters.count {
-            startsingleVariantAsync(currentParam)
+            startSingleVariantAsync(currentParam)
         }
     }
 }

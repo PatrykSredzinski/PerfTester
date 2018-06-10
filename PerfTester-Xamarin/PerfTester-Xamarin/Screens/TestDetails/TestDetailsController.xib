@@ -1,97 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestDetailsController">
             <connections>
-                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
-                <outlet property="TestTitleLabel" destination="193" id="name-outlet-193"/>
+                <outlet property="TableView" destination="1369" id="name-outlet-1369"/>
                 <outlet property="TestDetailsLabel" destination="635" id="name-outlet-635"/>
                 <outlet property="TestImageView" destination="178" id="name-outlet-178"/>
-                <outlet property="TableView" destination="1369" id="name-outlet-1369"/>
+                <outlet property="TestTitleLabel" destination="193" id="name-outlet-193"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-            <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="1" alpha="1"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="178" translatesAutoresizingMaskIntoConstraints="NO">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="178">
                     <rect key="frame" x="0.0" y="16" width="414" height="50"/>
                     <constraints>
-                        <constraint id="253" firstItem="178" firstAttribute="height" constant="50"/>
+                        <constraint firstAttribute="height" constant="50" id="253"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="193" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0">
-                    <rect key="frame" x="16" y="74" width="382" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="193">
+                    <rect key="frame" x="16" y="82" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Details Test Details Test Details Test Details Test Details Test Details " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="635" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="0">
-                    <rect key="frame" x="16" y="102.5" width="382" height="41"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Details Test Details Test Details Test Details Test Details Test Details " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="635">
+                    <rect key="frame" x="16" y="110.5" width="382" height="41"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="945" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="248" y="159.5" width="150" height="50"/>
-                    <state key="normal" title="START"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="945">
+                    <rect key="frame" x="248" y="167.5" width="150" height="50"/>
                     <constraints>
-                        <constraint id="960" firstItem="945" firstAttribute="height" constant="50"/>
-                        <constraint id="975" firstItem="945" firstAttribute="width" constant="150"/>
+                        <constraint firstAttribute="height" constant="50" id="960"/>
+                        <constraint firstAttribute="width" constant="150" id="975"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
+                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1"/>
+                    <state key="normal" title="START">
+                        <color key="titleColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                    </state>
                     <connections>
-                        <action selector="startAction:" destination="-1" id="1187" eventType="touchUpInside"/>
+                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="1187"/>
                     </connections>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1369" translatesAutoresizingMaskIntoConstraints="NO">
-                    <rect key="frame" x="0.0" y="217.5" width="414" height="518.5"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1369">
+                    <rect key="frame" x="0.0" y="225.5" width="414" height="510.5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
             </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint id="208" firstItem="178" firstAttribute="top" secondItem="2" secondAttribute="top" constant="16"/>
-                <constraint id="223" firstItem="178" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
-                <constraint id="238" firstItem="2" firstAttribute="trailing" secondItem="178" secondAttribute="trailing"/>
-                <constraint id="338" firstItem="193" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="8"/>
-                <constraint id="353" firstItem="193" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16"/>
-                <constraint id="368" firstItem="2" firstAttribute="trailing" secondItem="193" secondAttribute="trailing" constant="16"/>
-                <constraint id="650" firstItem="635" firstAttribute="top" secondItem="193" secondAttribute="bottom" constant="8"/>
-                <constraint id="665" firstItem="635" firstAttribute="leading" secondItem="193" secondAttribute="leading"/>
-                <constraint id="680" firstItem="635" firstAttribute="trailing" secondItem="193" secondAttribute="trailing"/>
-                <constraint id="990" firstItem="945" firstAttribute="top" secondItem="635" secondAttribute="bottom" constant="16"/>
-                <constraint id="1005" firstItem="635" firstAttribute="trailing" secondItem="945" secondAttribute="trailing"/>
-                <constraint id="1370" firstItem="1369" firstAttribute="trailing" secondItem="2" secondAttribute="trailing"/>
-                <constraint id="1371" firstItem="2" firstAttribute="bottom" secondItem="1369" secondAttribute="bottom"/>
-                <constraint id="1372" firstItem="1369" firstAttribute="leading" secondItem="2" secondAttribute="leading"/>
-                <constraint id="1373" firstItem="1369" firstAttribute="top" secondItem="945" secondAttribute="bottom" constant="8"/>
+                <constraint firstItem="178" firstAttribute="top" secondItem="2" secondAttribute="top" constant="16" id="208"/>
+                <constraint firstItem="178" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="223"/>
+                <constraint firstAttribute="trailing" secondItem="178" secondAttribute="trailing" id="238"/>
+                <constraint firstItem="193" firstAttribute="top" secondItem="178" secondAttribute="bottom" constant="16" id="338"/>
+                <constraint firstItem="193" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="353"/>
+                <constraint firstAttribute="trailing" secondItem="193" secondAttribute="trailing" constant="16" id="368"/>
+                <constraint firstItem="635" firstAttribute="top" secondItem="193" secondAttribute="bottom" constant="8" id="650"/>
+                <constraint firstItem="635" firstAttribute="leading" secondItem="193" secondAttribute="leading" id="665"/>
+                <constraint firstItem="635" firstAttribute="trailing" secondItem="193" secondAttribute="trailing" id="680"/>
+                <constraint firstItem="945" firstAttribute="top" secondItem="635" secondAttribute="bottom" constant="16" id="990"/>
+                <constraint firstItem="635" firstAttribute="trailing" secondItem="945" secondAttribute="trailing" id="1005"/>
+                <constraint firstItem="1369" firstAttribute="trailing" secondItem="2" secondAttribute="trailing" id="1370"/>
+                <constraint firstAttribute="bottom" secondItem="1369" secondAttribute="bottom" id="1371"/>
+                <constraint firstItem="1369" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="1372"/>
+                <constraint firstItem="1369" firstAttribute="top" secondItem="945" secondAttribute="bottom" constant="8" id="1373"/>
             </constraints>
         </view>
     </objects>
     <resources>
-        <image name="TabBar/homeActive.png" width="40" height="40"/>
-        <image name="TabBar/homeDefault.png" width="40" height="40"/>
-        <image name="TabBar/testActive.png" width="40" height="40"/>
-        <image name="TabBar/testDefault.png" width="40" height="40"/>
-        <image name="TabBar/userActive.png" width="40" height="40"/>
-        <image name="TabBar/userDefault.png" width="40" height="40"/>
-        <image name="Tests/list.png" width="40" height="40"/>
-        <image name="Tests/stoper.png" width="40" height="40"/>
-        <image name="Tests/database.png" width="40" height="40"/>
-        <image name="Tests/phone.png" width="40" height="40"/>
-        <image name="Tests/arrow.png" width="40" height="40"/>
-        <image name="Tests/shield.png" width="40" height="40"/>
-        <image name="Tests/calculator.png" width="40" height="40"/>
-        <image name="Tests/flow.png" width="40" height="40"/>
-        <image name="Tests/multithreading.png" width="40" height="40"/>
-        <image name="Tests/photo.png" width="40" height="40"/>
-        <image name="Tests/devices.png" width="40" height="40"/>
-        <image name="Tests/json.png" width="40" height="40"/>
-        <image name="Tests/maths.png" width="40" height="40"/>
-        <image name="Tests/clock.png" width="40" height="40"/>
-        <image name="Tests/lock.png" width="40" height="40"/>
+        <image name="HomeActive" width="40" height="40"/>
+        <image name="UserDefault" width="40" height="40"/>
+        <image name="UserActive" width="40" height="40"/>
+        <image name="TestDefault" width="40" height="40"/>
+        <image name="TestActive" width="40" height="40"/>
+        <image name="HomeDefault" width="40" height="40"/>
+        <image name="Stoper" width="40" height="40"/>
+        <image name="Shield" width="40" height="40"/>
+        <image name="Photo" width="40" height="40"/>
+        <image name="Phone" width="40" height="40"/>
+        <image name="Multithreading" width="40" height="40"/>
+        <image name="Maths" width="40" height="40"/>
+        <image name="Lock" width="40" height="40"/>
+        <image name="List" width="40" height="40"/>
+        <image name="JSON" width="40" height="40"/>
+        <image name="Flow" width="40" height="40"/>
+        <image name="Devices" width="40" height="40"/>
+        <image name="DataBase" width="40" height="40"/>
+        <image name="Clock" width="40" height="40"/>
+        <image name="Calculator" width="40" height="40"/>
+        <image name="Arrow" width="40" height="40"/>
     </resources>
 </document>
