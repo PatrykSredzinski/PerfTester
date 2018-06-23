@@ -13,7 +13,7 @@ class HeavyCalculationsSyncTest : Test {
     override init() {
         super.init()
         title = "Heavy Sync Calculations"
-        desc = "Doing a lot of math operations on a huge matrixes working on a main thread."
+        desc = "Creating N times an array of 8 doubles and calculating it's power of 2 on a main thread"
         imageName = "Maths"
         parameters = [10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000]
     }

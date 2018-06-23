@@ -41,10 +41,13 @@ namespace PerfTesterXamarin.Screens.TestDetails
             TestImageView.Image = UIImage.FromBundle(test.ImageName);
         }
 
-        partial void startAction(UIButton sender)
+        partial void StartAction(UIButton sender)
         {
+            StartButton.Enabled = false;
             this.Test.Start((results) => {
                 TableView.ReloadData();
+            }, (results) => {
+                StartButton.Enabled = true;
             });
         }
     }

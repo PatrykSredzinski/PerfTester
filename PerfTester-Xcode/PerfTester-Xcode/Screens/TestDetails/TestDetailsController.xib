@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestDetailsController" customModule="PerfTester_Xcode" customModuleProvider="target">
             <connections>
                 <outlet property="descLabel" destination="KuO-Uz-7GL" id="u0w-zs-GCj"/>
+                <outlet property="startButton" destination="WMW-Wc-CWe" id="c66-rA-E6U"/>
                 <outlet property="tableView" destination="44x-3C-v5S" id="7uP-Bu-6aX"/>
                 <outlet property="testImageView" destination="Qga-nl-fxV" id="Khm-DL-FCD"/>
                 <outlet property="titleLabel" destination="rx6-bA-2X2" id="c0q-SC-WXc"/>
@@ -55,7 +56,10 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                     <state key="normal" title="START">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="1" green="0.19607843137254902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

@@ -14,7 +14,8 @@ class TestDetailsController: UIViewController {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var descLabel: UILabel!
     @IBOutlet private var tableView: UITableView!
-   
+    @IBOutlet private var startButton: UIButton!
+
     private var test: Test
     init(test: Test) {
         self.test = test
@@ -50,8 +51,12 @@ class TestDetailsController: UIViewController {
     }
     
     @IBAction func startAction(_ sender: UIButton) {
-        test.start { results in
+        startButton.isEnabled = false
+        test.start(updateBlock: {
+            results in
             self.tableView.reloadData()
+        }) { results in
+            self.startButton.isEnabled = true
         }
     }
     

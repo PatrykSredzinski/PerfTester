@@ -16,6 +16,7 @@ class Test {
     var parameters: [Double] = []
         
     private var updateBlock: ((_ results: [Double]) -> Void)?
+    private var doneBlock: ((_ results: [Double]) -> Void)?
 
     func prepare(param: Double) {
         assertionFailure()
@@ -30,8 +31,9 @@ class Test {
     private var timers: [CFAbsoluteTime] = []
     private var currentParam = 0
     
-    func start(updateBlock: @escaping (_ results: [Double]) -> Void) {
+    func start(updateBlock: @escaping (_ results: [Double]) -> Void, doneBlock: @escaping (_ results: [Double]) -> Void){
         self.updateBlock = updateBlock
+        self.doneBlock = doneBlock
         resetTest()
         startSingleVariantAsync(currentParam)
     }
@@ -57,7 +59,7 @@ class Test {
     }
     
     func finishJob(param: Double) {
-        let interval = round((CFAbsoluteTimeGetCurrent() - timers[currentParam])*1000);
+        let interval = round(max(1,(CFAbsoluteTimeGetCurrent() - timers[currentParam])*1000));
         results[currentParam] = interval
         
         if let updateBlockSet = updateBlock {
@@ -66,6 +68,10 @@ class Test {
         currentParam += 1
         if currentParam < parameters.count {
             startSingleVariantAsync(currentParam)
+        } else {
+            if let doneBlockSet = doneBlock {
+                doneBlockSet(results)
+            }
         }
     }
 }

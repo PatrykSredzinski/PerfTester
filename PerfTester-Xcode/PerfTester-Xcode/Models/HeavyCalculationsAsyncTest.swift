@@ -13,7 +13,7 @@ class HeavyCalculationsAsyncTest: Test {
     override init() {
         super.init()
         title = "Heavy Async Calculations"
-        desc = "Doing a lot of math operations on a huge matrixes working in the background."
+        desc = "Creating N times an array of 8 doubles and calculating it's power of 2 on a background thread"
         imageName = "Maths"
         parameters = [10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000]
     }
@@ -25,7 +25,7 @@ class HeavyCalculationsAsyncTest: Test {
     override func doJob(param: Double) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
             for _ in 0...Int(param) {
-                let testArr = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]
+                let testArr: [Double] = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]
                 var _ = self.multiplyArray(testArr)
             }
             DispatchQueue.main.async {

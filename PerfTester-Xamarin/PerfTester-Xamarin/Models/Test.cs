@@ -22,11 +22,13 @@ namespace PerfTesterXamarin.Models
 
         Stopwatch[] Timers;
         Action<long[]> UpdateBlock;
+        Action<long[]> DoneBlock;
         int CurrentParam = 0;
 
-        public void Start(Action<long[]> updateBlock)
+        public void Start(Action<long[]> updateBlock, Action<long[]> doneBlock)
         {
             UpdateBlock = updateBlock;
+            DoneBlock = doneBlock;
             ResetTest();
             StartSingleVariantAsync(CurrentParam);
         }
@@ -59,12 +61,16 @@ namespace PerfTesterXamarin.Models
         public void FinishJob(double param)
         {
             Timers[CurrentParam].Stop();
-            Results[CurrentParam] = Timers[CurrentParam].ElapsedMilliseconds;
+            Results[CurrentParam] = Math.Max(1,Timers[CurrentParam].ElapsedMilliseconds);
             UpdateBlock(Results);
             CurrentParam++;
             if (CurrentParam < Parameters.Length)
             {
                 StartSingleVariantAsync(CurrentParam);
+            } 
+            else 
+            {
+                DoneBlock(Results);
             }
         }
     }

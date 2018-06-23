@@ -16,6 +16,10 @@ namespace PerfTesterXamarin.Screens.TestDetails
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton StartButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView TableView { get; set; }
 
         [Outlet]
@@ -32,10 +36,15 @@ namespace PerfTesterXamarin.Screens.TestDetails
 
         [Action ("startAction:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void startAction (UIKit.UIButton sender);
+        partial void StartAction (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
+            if (StartButton != null) {
+                StartButton.Dispose ();
+                StartButton = null;
+            }
+
             if (TableView != null) {
                 TableView.Dispose ();
                 TableView = null;
