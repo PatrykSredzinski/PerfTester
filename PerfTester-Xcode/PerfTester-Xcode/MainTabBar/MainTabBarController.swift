@@ -20,7 +20,8 @@ class MainTabBarController: UITabBarController {
 
     private func setupTabBar() {
         tabBar.isTranslucent = false
-        tabBar.tintColor = MainTabBarController.mainColor
+        tabBar.tintColor = UIColor.white
+        tabBar.barTintColor = MainTabBarController.mainColor
     }
     
     private func setupControllers() {
@@ -31,8 +32,9 @@ class MainTabBarController: UITabBarController {
         homeNav.tabBarItem.title = ""
         homeNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         homeNav.navigationBar.isTranslucent = false
-        homeNav.navigationBar.tintColor = MainTabBarController.mainColor
-        
+        homeNav.navigationBar.barTintColor = MainTabBarController.mainColor
+        homeNav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+
         let testListCtrl = TestListController()
         let testListNav = UINavigationController(rootViewController: testListCtrl)
         testListNav.tabBarItem.selectedImage = UIImage(named: "TestActive")
@@ -40,7 +42,9 @@ class MainTabBarController: UITabBarController {
         testListNav.tabBarItem.title = ""
         testListNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         testListNav.navigationBar.isTranslucent = false
-        testListNav.navigationBar.tintColor = MainTabBarController.mainColor
+        testListNav.navigationBar.barTintColor = MainTabBarController.mainColor
+        testListNav.navigationBar.tintColor = UIColor.white
+        testListNav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
 
         let infoCtrl = InfoController()
         let infoNav = UINavigationController(rootViewController: infoCtrl)
@@ -49,7 +53,9 @@ class MainTabBarController: UITabBarController {
         infoNav.tabBarItem.title = ""
         infoNav.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
         infoNav.navigationBar.isTranslucent = false
-        infoNav.navigationBar.tintColor = MainTabBarController.mainColor
+        infoNav.navigationBar.barTintColor = MainTabBarController.mainColor
+        infoNav.navigationBar.tintColor = UIColor.white
+        infoNav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
 
         let navControllers = [homeNav, testListNav, infoNav]
         viewControllers = navControllers

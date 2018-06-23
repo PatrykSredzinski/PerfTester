@@ -1,6 +1,7 @@
 ﻿using System;
-
+using CoreFoundation;
 using UIKit;
+using System.Collections.Generic;
 
 namespace PerfTesterXamarin.Screens.Home
 {

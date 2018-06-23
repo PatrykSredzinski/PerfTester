@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
@@ -27,7 +26,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-Xamarin Development</CodesignProvision>
+    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -42,7 +41,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-Xamarin Development</CodesignProvision>
+    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
+    <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -56,7 +56,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-Xamarin Development</CodesignProvision>
+    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -78,7 +78,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-Xamarin Development</CodesignProvision>
+    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -116,17 +116,11 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
     <ImageAsset Include="Assets.xcassets\HomeActive.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\HomeActive.imageset\homeActive.png" />
     <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\TestActive.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\TestDefault.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\UserActive.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\UserDefault.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\UserDefault.imageset\userDefault.png" />
-    <ImageAsset Include="Assets.xcassets\UserActive.imageset\userActive.png" />
-    <ImageAsset Include="Assets.xcassets\TestDefault.imageset\testDefault.png" />
-    <ImageAsset Include="Assets.xcassets\TestActive.imageset\testActive.png" />
-    <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\homeDefault.png" />
     <ImageAsset Include="Assets.xcassets\Arrow.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Calculator.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Clock.imageset\Contents.json" />
@@ -158,6 +152,12 @@
     <ImageAsset Include="Assets.xcassets\Calculator.imageset\calculator.png" />
     <ImageAsset Include="Assets.xcassets\Arrow.imageset\arrow.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\visual.png" />
+    <ImageAsset Include="Assets.xcassets\UserDefault.imageset\icons8-kontakty-40.png" />
+    <ImageAsset Include="Assets.xcassets\UserActive.imageset\icons8-kontakty-filled-40.png" />
+    <ImageAsset Include="Assets.xcassets\TestDefault.imageset\icons8-test-zaliczony-40.png" />
+    <ImageAsset Include="Assets.xcassets\TestActive.imageset\icons8-test-zaliczony-filled-40.png" />
+    <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\icons8-chata-40.png" />
+    <ImageAsset Include="Assets.xcassets\HomeActive.imageset\icons8-chata-filled-40.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Screens\" />
@@ -235,8 +235,8 @@
       <DependentUpon>TestListCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Test.cs" />
-    <Compile Include="Models\HeavyCalculationsSyncTest.cs" />
     <Compile Include="Screens\TestList\TestListViewModel.cs" />
+    <Compile Include="Models\HeavyCalculationsSyncTest.cs" />
     <Compile Include="Models\HeavyCalculationsAsyncTest.cs" />
     <Compile Include="Models\DatabaseCreationTest.cs" />
     <Compile Include="Models\Helpers\Dog.cs" />

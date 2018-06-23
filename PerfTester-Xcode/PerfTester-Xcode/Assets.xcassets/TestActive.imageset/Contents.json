@@ -9,7 +9,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "testActive.png",
+      "filename" : "icons8-test-zaliczony-filled-40.png",
       "scale" : "2x"
     },
     {
@@ -20,5 +20,8 @@
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }

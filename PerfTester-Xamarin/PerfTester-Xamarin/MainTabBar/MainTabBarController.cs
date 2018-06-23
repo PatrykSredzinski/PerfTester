@@ -24,10 +24,11 @@ namespace PerfTesterXamarin.Screens.MainTabBar
         private void SetupTabBar()
         {
             base.TabBar.Translucent = false;
-            base.TabBar.TintColor = MainColor;
+            base.TabBar.TintColor = UIColor.White;
+            base.TabBar.BarTintColor = MainColor;
         }
 
-        private void SetupControllers() 
+        private void SetupControllers()
         {
             var homeCtrl = new HomeController();
             var homeNav = new UINavigationController(homeCtrl);
@@ -36,7 +37,9 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             homeNav.TabBarItem.Title = "";
             homeNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
             homeNav.NavigationBar.Translucent = false;
-            homeNav.NavigationBar.TintColor = MainColor;
+            homeNav.NavigationBar.BarTintColor = MainColor;
+            homeNav.NavigationBar.TintColor = UIColor.White;
+            homeNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
             var testListCtrl = new TestListController();
             var testListNav = new UINavigationController(testListCtrl);
@@ -45,7 +48,9 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             testListNav.TabBarItem.Title = "";
             testListNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
             testListNav.NavigationBar.Translucent = false;
-            testListNav.NavigationBar.TintColor = MainColor;
+            testListNav.NavigationBar.BarTintColor = MainColor;
+            testListNav.NavigationBar.TintColor = UIColor.White;
+            testListNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
             var infoCtrl = new InfoController();
             var infoNav = new UINavigationController(infoCtrl);
@@ -54,7 +59,9 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             infoNav.TabBarItem.Title = "";
             infoNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
             infoNav.NavigationBar.Translucent = false;
-            infoNav.NavigationBar.TintColor = MainColor;
+            infoNav.NavigationBar.BarTintColor = MainColor;
+            infoNav.NavigationBar.TintColor = UIColor.White;
+            infoNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
             var navControllers = new UINavigationController[] { homeNav, testListNav, infoNav };
             base.ViewControllers = navControllers;

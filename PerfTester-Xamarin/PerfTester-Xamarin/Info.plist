@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>PerfTester</string>
 	<key>CFBundleIdentifier</key>
-	<string>private.PerfTester-Xamarin</string>
+	<string>private.PerfTester-VisualStudio</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

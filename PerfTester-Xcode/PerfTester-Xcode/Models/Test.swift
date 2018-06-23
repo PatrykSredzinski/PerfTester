@@ -27,7 +27,7 @@ class Test {
     
     var results: [Double] = []
     var isTestRunning: [Bool] = []
-    private var timers: [DispatchTime] = []
+    private var timers: [CFAbsoluteTime] = []
     private var currentParam = 0
     
     func start(updateBlock: @escaping (_ results: [Double]) -> Void) {
@@ -39,7 +39,7 @@ class Test {
     private func resetTest() {
         currentParam = 0
         results = [Double](repeating: 0, count: parameters.count)
-        timers = [DispatchTime](repeating: DispatchTime.now(), count: parameters.count)
+        timers = [CFAbsoluteTime](repeating: CFAbsoluteTimeGetCurrent(), count: parameters.count)
     }
     
     private func startSingleVariantAsync(_ paramIndex: Int) {
@@ -52,13 +52,13 @@ class Test {
     private func startSingleVariant(_ paramIndex: Int) {
         let param = parameters[paramIndex]
         prepare(param: param)
-        timers[paramIndex] = DispatchTime.now()
+        timers[paramIndex] = CFAbsoluteTimeGetCurrent()
         doJob(param: param)
     }
     
     func finishJob(param: Double) {
-        let nanoSeconds = DispatchTime.now().uptimeNanoseconds - timers[currentParam].uptimeNanoseconds
-        results[currentParam] = Double(nanoSeconds)/1000000
+        let interval = round((CFAbsoluteTimeGetCurrent() - timers[currentParam])*1000);
+        results[currentParam] = interval
         
         if let updateBlockSet = updateBlock {
             updateBlockSet(results)

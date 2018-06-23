@@ -19,15 +19,17 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="526">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" colorSpace="calibratedWhite" white="0" alpha="0"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="526" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="533"/>
                 <constraint firstItem="526" firstAttribute="top" secondItem="2" secondAttribute="top" id="537"/>
                 <constraint firstAttribute="trailing" secondItem="526" secondAttribute="trailing" id="541"/>
                 <constraint firstAttribute="bottom" secondItem="526" secondAttribute="bottom" id="545"/>
             </constraints>
+            <point key="canvasLocation" x="412" y="-354"/>
+            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.76078431372549016" green="0.70588235294117652" blue="0.996078431372549" alpha="1"/>
         </view>
     </objects>
     <resources>

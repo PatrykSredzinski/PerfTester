@@ -24,7 +24,7 @@ class InfoController: UIViewController {
     }
     
     private func setupNavBar() {
-        self.title = "Profile"
+        self.title = "Info"
     }
 
 }

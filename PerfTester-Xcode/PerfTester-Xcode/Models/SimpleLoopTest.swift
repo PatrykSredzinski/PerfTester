@@ -13,7 +13,7 @@ class SimpleLoopTest: Test {
     override init() {
         super.init()
         title = "Simple Empty Loop"
-        desc = "Simple for loop without a body"
+        desc = "Simple loop without a body"
         imageName = "Arrow"
         parameters = [10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000]
     }

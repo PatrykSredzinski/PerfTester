@@ -29,7 +29,7 @@ class TestListController: UIViewController {
     }
 
     private func setupNavBar() {
-        self.title = "Test"
+        self.title = "Tests"
     }
     
     func setupTableView() {

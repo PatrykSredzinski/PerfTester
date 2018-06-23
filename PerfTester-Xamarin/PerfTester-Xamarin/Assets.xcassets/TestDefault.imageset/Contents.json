@@ -8,7 +8,7 @@
       "idiom": "universal"
     },
     {
-      "filename": "testDefault.png",
+      "filename": "icons8-test-zaliczony-40.png",
       "scale": "2x",
       "idiom": "universal"
     },
@@ -78,6 +78,7 @@
   ],
   "info": {
     "version": 1,
-    "author": "xcode"
+    "author": "xcode",
+    "template-rendering-intent": "original"
   }
 }

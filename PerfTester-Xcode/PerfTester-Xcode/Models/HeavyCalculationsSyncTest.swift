@@ -31,7 +31,7 @@ class HeavyCalculationsSyncTest : Test {
     }
     
     private func multiplyArray(_ array: [Double]) -> [Double] {
-        var finArr = Array<Double>(repeating: 0, count: array.count)
+        var finArr = [Double](repeating: 0, count: array.count)
         for i in 0...array.count-1 {
             finArr[i] = array[i] * array[i]
         }
