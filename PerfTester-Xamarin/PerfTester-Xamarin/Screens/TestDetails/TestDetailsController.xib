@@ -13,6 +13,7 @@
                 <outlet property="TestTitleLabel" destination="193" id="name-outlet-193"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
                 <outlet property="StartButton" destination="945" id="name-outlet-945"/>
+                <outlet property="ExportButton" destination="2833" id="name-outlet-2833"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -50,7 +51,7 @@
                         <color key="titleColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
                     </state>
                     <connections>
-                        <action selector="startAction:" destination="-1" eventType="touchUpInside" id="1187"/>
+                        <action selector="StartAction:" destination="-1" id="3025" eventType="touchUpInside"/>
                     </connections>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
@@ -65,6 +66,30 @@
                     <rect key="frame" x="0.0" y="225.5" width="414" height="510.5"/>
                     <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedWhite" white="0" alpha="0"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2833">
+                    <rect key="frame" x="248" y="676" width="150" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2836"/>
+                        <constraint firstAttribute="width" constant="150" id="2837"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15" weight="semibold"/>
+                    <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    <state key="normal" title="EXPORT">
+                        <color key="titleColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                    </state>
+                    <connections>
+                        <action selector="startAction:" destination="2835" eventType="touchUpInside" id="2834"/>
+                        <action selector="ExportAction:" destination="-1" id="4888" eventType="touchUpInside"/>
+                    </connections>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <state key="disabled">
+                        <color key="titleColor" colorSpace="calibratedRGB" red="0.984313725490196" green="0.090196078431372548" blue="0.027450980392156862" alpha="1"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedRGB" red="0.76078431372549016" green="0.70588235294117652" blue="0.996078431372549" alpha="1"/>
             <constraints>
@@ -83,6 +108,8 @@
                 <constraint firstAttribute="bottom" secondItem="1369" secondAttribute="bottom" id="1371"/>
                 <constraint firstItem="1369" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="1372"/>
                 <constraint firstItem="1369" firstAttribute="top" secondItem="945" secondAttribute="bottom" constant="8" id="1373"/>
+                <constraint id="2840" firstItem="2833" firstAttribute="trailing" secondItem="945" secondAttribute="trailing"/>
+                <constraint id="2843" firstItem="1369" firstAttribute="bottom" secondItem="2833" secondAttribute="bottom" constant="10"/>
             </constraints>
         </view>
     </objects>

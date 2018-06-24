@@ -191,6 +191,7 @@
     <Folder Include="Assets.xcassets\Photo.imageset\" />
     <Folder Include="Assets.xcassets\Shield.imageset\" />
     <Folder Include="Assets.xcassets\Stoper.imageset\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -246,6 +247,7 @@
       <DependentUpon>TestDetailsCell.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\SimpleLoopTest.cs" />
+    <Compile Include="Helpers\CSVHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.4.6\build\Fody.targets" Condition="Exists('..\packages\Fody.2.4.6\build\Fody.targets')" />

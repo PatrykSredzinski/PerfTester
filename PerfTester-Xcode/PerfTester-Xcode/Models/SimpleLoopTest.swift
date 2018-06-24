@@ -15,7 +15,7 @@ class SimpleLoopTest: Test {
         title = "Simple Empty Loop"
         desc = "Simple loop without a body"
         imageName = "Arrow"
-        parameters = [10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000]
+        parameters = [10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000]
     }
     
     override func prepare(param: Double) {

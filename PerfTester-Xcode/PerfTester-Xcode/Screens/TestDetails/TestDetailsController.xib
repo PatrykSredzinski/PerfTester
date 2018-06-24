@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestDetailsController" customModule="PerfTester_Xcode" customModuleProvider="target">
             <connections>
                 <outlet property="descLabel" destination="KuO-Uz-7GL" id="u0w-zs-GCj"/>
+                <outlet property="exportButton" destination="Dv6-oD-2ry" id="d08-a2-S2Z"/>
                 <outlet property="startButton" destination="WMW-Wc-CWe" id="c66-rA-E6U"/>
                 <outlet property="tableView" destination="44x-3C-v5S" id="7uP-Bu-6aX"/>
                 <outlet property="testImageView" destination="Qga-nl-fxV" id="Khm-DL-FCD"/>
@@ -71,15 +72,41 @@
                         <action selector="startAction:" destination="-1" eventType="touchUpInside" id="l7U-h2-qEo"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dv6-oD-2ry">
+                    <rect key="frame" x="209" y="607" width="150" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="gnu-uA-itg"/>
+                        <constraint firstAttribute="height" constant="50" id="pre-lF-ZfQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="EXPORT">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="1" green="0.1960784314" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="exportButton:" destination="-1" eventType="touchUpInside" id="7dd-lj-yza"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.88235294117647056" green="0.95686274509803915" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="44x-3C-v5S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="B8E-Up-sRs"/>
                 <constraint firstItem="KuO-Uz-7GL" firstAttribute="top" secondItem="rx6-bA-2X2" secondAttribute="bottom" constant="8" id="Dih-IC-vK7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="44x-3C-v5S" secondAttribute="bottom" id="G3e-oa-JbA"/>
+                <constraint firstItem="Dv6-oD-2ry" firstAttribute="trailing" secondItem="WMW-Wc-CWe" secondAttribute="trailing" id="I7F-De-A68"/>
                 <constraint firstItem="Qga-nl-fxV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="MhO-JK-aqF"/>
                 <constraint firstItem="rx6-bA-2X2" firstAttribute="top" secondItem="Qga-nl-fxV" secondAttribute="bottom" constant="16" id="PAf-5R-zYO"/>
                 <constraint firstItem="44x-3C-v5S" firstAttribute="top" secondItem="WMW-Wc-CWe" secondAttribute="bottom" constant="8" id="Rl7-au-FGS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Dv6-oD-2ry" secondAttribute="bottom" constant="10" id="SoX-LE-bEQ"/>
                 <constraint firstItem="44x-3C-v5S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V4l-Xp-fUE"/>
                 <constraint firstItem="KuO-Uz-7GL" firstAttribute="trailing" secondItem="rx6-bA-2X2" secondAttribute="trailing" id="WD0-2G-Cbc"/>
                 <constraint firstItem="WMW-Wc-CWe" firstAttribute="top" secondItem="KuO-Uz-7GL" secondAttribute="bottom" constant="16" id="eBP-Q3-IrY"/>

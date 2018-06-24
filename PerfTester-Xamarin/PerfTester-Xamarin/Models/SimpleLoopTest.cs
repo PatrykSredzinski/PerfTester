@@ -6,7 +6,7 @@ namespace PerfTesterXamarin.Models
         public override string Title => "Simple Empty Loop";
         public override string Desc => "Simple for loop without a body";
         public override string ImageName => "Arrow";
-        public override double[] Parameters => new double[] { 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000 };
+        public override double[] Parameters => new double[] { 10000, 20000, 50000, 100000, 200000, 500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000 };
 
         public override void Prepare(double param)
         { }

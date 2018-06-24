@@ -16,6 +16,10 @@ namespace PerfTesterXamarin.Screens.TestDetails
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton ExportButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton StartButton { get; set; }
 
         [Outlet]
@@ -34,12 +38,21 @@ namespace PerfTesterXamarin.Screens.TestDetails
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel TestTitleLabel { get; set; }
 
-        [Action ("startAction:")]
+        [Action ("ExportAction:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void ExportAction (UIKit.UIButton sender);
+
+        [Action ("StartAction:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void StartAction (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
+            if (ExportButton != null) {
+                ExportButton.Dispose ();
+                ExportButton = null;
+            }
+
             if (StartButton != null) {
                 StartButton.Dispose ();
                 StartButton = null;

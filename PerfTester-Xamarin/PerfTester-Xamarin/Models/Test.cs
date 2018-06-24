@@ -18,7 +18,6 @@ namespace PerfTesterXamarin.Models
         public abstract void DoJob(double param);
 
         public long[] Results;
-        public bool[] IsTestRunning;
 
         Stopwatch[] Timers;
         Action<long[]> UpdateBlock;

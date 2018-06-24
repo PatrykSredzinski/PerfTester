@@ -1,5 +1,6 @@
 ﻿using System;
 using Foundation;
+using PerfTesterXamarin.Helpers;
 using PerfTesterXamarin.Models;
 using PerfTesterXamarin.Screens.TestDetails.Cells;
 using UIKit;
@@ -33,22 +34,31 @@ namespace PerfTesterXamarin.Screens.TestDetails
             TableView.RowHeight = UITableView.AutomaticDimension;
             TableView.EstimatedRowHeight = 50;
             TableView.RegisterNibForCellReuse(TestDetailsCell.Nib, "TestDetailsCell");
+            TableView.ContentInset = new UIEdgeInsets() { Left=0, Top=0, Right=0, Bottom=70 };
         }
 
         void SetupView(Test test) {
             TestTitleLabel.Text = test.Title;
             TestDetailsLabel.Text = test.Desc;
             TestImageView.Image = UIImage.FromBundle(test.ImageName);
+            ExportButton.Hidden = true;
         }
 
         partial void StartAction(UIButton sender)
         {
             StartButton.Enabled = false;
+            ExportButton.Hidden = true;
             this.Test.Start((results) => {
                 TableView.ReloadData();
             }, (results) => {
                 StartButton.Enabled = true;
+                ExportButton.Hidden = false;
             });
+        }
+
+        partial void ExportAction(UIButton sender)
+        {
+            CSVHelper.SaveTestResults(Test);
         }
     }
 

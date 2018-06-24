@@ -27,7 +27,6 @@ class Test {
     }
     
     var results: [Double] = []
-    var isTestRunning: [Bool] = []
     private var timers: [CFAbsoluteTime] = []
     private var currentParam = 0
     

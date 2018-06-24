@@ -15,7 +15,8 @@ class TestDetailsController: UIViewController {
     @IBOutlet private var descLabel: UILabel!
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var startButton: UIButton!
-
+    @IBOutlet private var exportButton: UIButton!
+    
     private var test: Test
     init(test: Test) {
         self.test = test
@@ -42,24 +43,32 @@ class TestDetailsController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 50
         tableView.register(UINib(nibName: "TestDetailsCell", bundle: nil), forCellReuseIdentifier: "TestDetailsCell")
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0)
     }
     
     private func setupView(test: Test) {
         titleLabel.text = test.title
         descLabel.text = test.desc
         testImageView.image = UIImage(named: test.imageName)
+        exportButton.isHidden = true
     }
     
     @IBAction func startAction(_ sender: UIButton) {
         startButton.isEnabled = false
+        exportButton.isHidden = true
         test.start(updateBlock: {
             results in
             self.tableView.reloadData()
         }) { results in
             self.startButton.isEnabled = true
+            self.exportButton.isHidden = false
         }
     }
     
+    @IBAction func exportButton(_ sender: UIButton) {
+        CSVHelper.saveTestResults(test: test)
+    }
+
 }
 
 extension TestDetailsController: UITableViewDataSource {
