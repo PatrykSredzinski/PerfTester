@@ -8,6 +8,5 @@ namespace PerfTesterXamarin.Models.Helpers
     {
         public Int32 Id { get; set; }
         public string Name { get; set; }
-        public IList<Dog> Dogs { get; }
     }
 }
