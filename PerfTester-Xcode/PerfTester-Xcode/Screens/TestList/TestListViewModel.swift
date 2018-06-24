@@ -12,6 +12,7 @@ class TestListViewModel {
     let allTests = [
         SimpleLoopTest(),
         HeavyCalculationsSyncTest(),
-        HeavyCalculationsAsyncTest()
+        HeavyCalculationsAsyncTest(),
+        DatabaseCreationTest()
     ]
 }
