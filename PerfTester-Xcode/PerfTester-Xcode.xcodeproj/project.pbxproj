@@ -12,12 +12,16 @@
 		6041623F20CDA02800C5C445 /* SimpleLoopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041623E20CDA02800C5C445 /* SimpleLoopTest.swift */; };
 		6042F98520DFAFD800FEF480 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98420DFAFD800FEF480 /* Dog.swift */; };
 		6042F98720DFAFE100FEF480 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98620DFAFE100FEF480 /* Person.swift */; };
-		6042F98920DFB3A200FEF480 /* DatabaseCreationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98820DFB3A200FEF480 /* DatabaseCreationTest.swift */; };
+		6042F98920DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98820DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift */; };
+		606B77F320E16F9300871284 /* ComplexDatabaseInsertingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */; };
+		606B77F520E16FBC00871284 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606B77F420E16FBC00871284 /* Toy.swift */; };
 		6091D00120DEE1E100D8F748 /* CSVHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091D00020DEE1E100D8F748 /* CSVHelper.swift */; };
 		60C19BA5209F068500E45DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C19BA4209F068500E45DDE /* AppDelegate.swift */; };
 		60C19BA7209F068500E45DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C19BA6209F068500E45DDE /* ViewController.swift */; };
 		60C19BAC209F068500E45DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60C19BAB209F068500E45DDE /* Assets.xcassets */; };
 		60C19BAF209F068500E45DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C19BAD209F068500E45DDE /* LaunchScreen.storyboard */; };
+		60C46CBC20EA93E800457A12 /* SimpleCalculationsSyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C46CBB20EA93E800457A12 /* SimpleCalculationsSyncTest.swift */; };
+		60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C46CBD20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift */; };
 		60C7CDF120CBEBCE0039C1DE /* HeavyCalculationsAsyncTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C7CDF020CBEBCE0039C1DE /* HeavyCalculationsAsyncTest.swift */; };
 		60CD734820CB164C00EE9115 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD734720CB164C00EE9115 /* MainTabBarController.swift */; };
 		60CD735120CB16DF00EE9115 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CD734F20CB16DF00EE9115 /* HomeController.xib */; };
@@ -44,7 +48,9 @@
 		6041623E20CDA02800C5C445 /* SimpleLoopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoopTest.swift; sourceTree = "<group>"; };
 		6042F98420DFAFD800FEF480 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		6042F98620DFAFE100FEF480 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		6042F98820DFB3A200FEF480 /* DatabaseCreationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseCreationTest.swift; sourceTree = "<group>"; };
+		6042F98820DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDatabaseInsertingTest.swift; sourceTree = "<group>"; };
+		606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexDatabaseInsertingTest.swift; sourceTree = "<group>"; };
+		606B77F420E16FBC00871284 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		6091D00020DEE1E100D8F748 /* CSVHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHelper.swift; sourceTree = "<group>"; };
 		60C19BA1209F068500E45DDE /* PerfTester-Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PerfTester-Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C19BA4209F068500E45DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 		60C19BAB209F068500E45DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60C19BAE209F068500E45DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60C19BB0209F068500E45DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C46CBB20EA93E800457A12 /* SimpleCalculationsSyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculationsSyncTest.swift; sourceTree = "<group>"; };
+		60C46CBD20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculationsAsyncTest.swift; sourceTree = "<group>"; };
 		60C7CDF020CBEBCE0039C1DE /* HeavyCalculationsAsyncTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyCalculationsAsyncTest.swift; sourceTree = "<group>"; };
 		60CD734720CB164C00EE9115 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		60CD734F20CB16DF00EE9115 /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
@@ -94,6 +102,7 @@
 		6042F98320DFAFCE00FEF480 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				606B77F420E16FBC00871284 /* Toy.swift */,
 				6042F98420DFAFD800FEF480 /* Dog.swift */,
 				6042F98620DFAFE100FEF480 /* Person.swift */,
 			);
@@ -156,9 +165,12 @@
 				6042F98320DFAFCE00FEF480 /* Helpers */,
 				60CD735F20CB1AD600EE9115 /* Test.swift */,
 				6041623E20CDA02800C5C445 /* SimpleLoopTest.swift */,
+				60C46CBB20EA93E800457A12 /* SimpleCalculationsSyncTest.swift */,
+				60C46CBD20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift */,
 				60CD736120CB1EC600EE9115 /* HeavyCalculationsSyncTest.swift */,
 				60C7CDF020CBEBCE0039C1DE /* HeavyCalculationsAsyncTest.swift */,
-				6042F98820DFB3A200FEF480 /* DatabaseCreationTest.swift */,
+				6042F98820DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift */,
+				606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -371,6 +383,7 @@
 				60CD735E20CB170600EE9115 /* TestListController.swift in Sources */,
 				60CD736820CB212500EE9115 /* TestListCell.swift in Sources */,
 				60CD736220CB1EC600EE9115 /* HeavyCalculationsSyncTest.swift in Sources */,
+				60C46CBC20EA93E800457A12 /* SimpleCalculationsSyncTest.swift in Sources */,
 				6091D00120DEE1E100D8F748 /* CSVHelper.swift in Sources */,
 				60CD735220CB16DF00EE9115 /* HomeController.swift in Sources */,
 				60C19BA7209F068500E45DDE /* ViewController.swift in Sources */,
@@ -379,11 +392,14 @@
 				60C19BA5209F068500E45DDE /* AppDelegate.swift in Sources */,
 				6041623F20CDA02800C5C445 /* SimpleLoopTest.swift in Sources */,
 				60CD736020CB1AD600EE9115 /* Test.swift in Sources */,
+				606B77F520E16FBC00871284 /* Toy.swift in Sources */,
 				60CD734820CB164C00EE9115 /* MainTabBarController.swift in Sources */,
-				6042F98920DFB3A200FEF480 /* DatabaseCreationTest.swift in Sources */,
+				6042F98920DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift in Sources */,
 				6016CEDB20CBDC4100822F00 /* TestDetailsCell.swift in Sources */,
 				6042F98720DFAFE100FEF480 /* Person.swift in Sources */,
 				6042F98520DFAFD800FEF480 /* Dog.swift in Sources */,
+				606B77F320E16F9300871284 /* ComplexDatabaseInsertingTest.swift in Sources */,
+				60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */,
 				60CD735620CB16F000EE9115 /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

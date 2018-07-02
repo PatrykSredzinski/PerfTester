@@ -63,10 +63,10 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             infoNav.NavigationBar.TintColor = UIColor.White;
             infoNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
-            var navControllers = new UINavigationController[] { homeNav, testListNav, infoNav };
+            var navControllers = new UINavigationController[] { testListNav };
             base.ViewControllers = navControllers;
 
-            base.SelectedIndex = 1;
+            base.SelectedIndex = 0;
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PerfTesterXamarin.Models
 {
-    public class HeavyCalculationsSyncTest : Test
+    public class HeavySyncCalculationsTest : Test
     {
         public override string Title => "Heavy Sync Calculations";
         public override string Desc => "Creating N times an array of 8 doubles and calculating it's power of 2 on a main thread";

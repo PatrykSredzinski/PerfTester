@@ -4,7 +4,7 @@ using CoreFoundation;
 
 namespace PerfTesterXamarin.Models
 {
-    public class HeavyCalculationsAsyncTest : Test
+    public class HeavyAsyncCalculationsTest : Test
     {
         public override string Title => "Heavy Async Calculations";
         public override string Desc => "Creating N times an array of 8 doubles and calculating it's power of 2 on a background thread";

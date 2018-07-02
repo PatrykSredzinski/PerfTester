@@ -1,5 +1,5 @@
 //
-//  DatabaseCreationTest.swift
+//  SimpleDatabaseInsertingTest.swift
 //  PerfTester-Xcode
 //
 //  Created by Patryk Średziński on 24.06.2018.
@@ -9,11 +9,11 @@
 import UIKit
 import RealmSwift;
 
-class DatabaseCreationTest: Test {
+class SimpleDatabaseInsertingTest: Test {
     
     override init() {
         super.init()
-        title = "Database Creation"
+        title = "Simple Database Inserting"
         desc = "Inserting N times 2 objects of type Person and Dog related with each other"
         imageName = "DataBase"
         parameters = [ 1000, 2000, 5000, 10000, 20000, 50000, 100000 ]

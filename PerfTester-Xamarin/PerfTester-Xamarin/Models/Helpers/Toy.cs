@@ -1,15 +1,13 @@
-﻿
-using System;
+﻿using System;
 using Realms;
 
 namespace PerfTesterXamarin.Models.Helpers
 {
-    public class Dog : RealmObject
+    public class Toy: RealmObject
     {
         public Int32 Id { get; set; }
         public string Name { get; set; }
-        public int Age { get; set; }
-        public Person Owner { get; set; }
+        public string Type { get; set; }
+        public Dog Owner { get; set; }
     }
-
 }

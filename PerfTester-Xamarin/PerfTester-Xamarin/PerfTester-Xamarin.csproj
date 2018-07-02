@@ -237,9 +237,9 @@
     </Compile>
     <Compile Include="Models\Test.cs" />
     <Compile Include="Screens\TestList\TestListViewModel.cs" />
-    <Compile Include="Models\HeavyCalculationsSyncTest.cs" />
-    <Compile Include="Models\HeavyCalculationsAsyncTest.cs" />
-    <Compile Include="Models\DatabaseCreationTest.cs" />
+    <Compile Include="Models\HeavySyncCalculationsTest.cs" />
+    <Compile Include="Models\HeavyAsyncCalculationsTest.cs" />
+    <Compile Include="Models\SimpleDatabaseInsertionTest.cs" />
     <Compile Include="Models\Helpers\Dog.cs" />
     <Compile Include="Models\Helpers\Person.cs" />
     <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.cs" />
@@ -248,6 +248,10 @@
     </Compile>
     <Compile Include="Models\SimpleLoopTest.cs" />
     <Compile Include="Helpers\CSVHelper.cs" />
+    <Compile Include="Models\ComplexDatabaseInsertionTest.cs" />
+    <Compile Include="Models\Helpers\Toy.cs" />
+    <Compile Include="Models\SimpleCalculationsSync.cs" />
+    <Compile Include="Models\SimpleCalculationsAsync.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.4.6\build\Fody.targets" Condition="Exists('..\packages\Fody.2.4.6\build\Fody.targets')" />
