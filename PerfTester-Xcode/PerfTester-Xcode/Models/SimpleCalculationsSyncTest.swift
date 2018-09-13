@@ -22,6 +22,10 @@ class SimpleCalculationsSyncTest : Test {
         
     }
     
+    override func done(param: Double) {
+
+    }
+    
     override func doJob(param: Double) {
         for _ in 0...Int(param) {
             let d1 = 53425472.124532 * -3213245.8356

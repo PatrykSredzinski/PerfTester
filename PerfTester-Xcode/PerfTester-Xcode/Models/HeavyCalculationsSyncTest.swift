@@ -22,6 +22,10 @@ class HeavyCalculationsSyncTest : Test {
         
     }
     
+    override func done(param: Double) {
+
+    }
+    
     override func doJob(param: Double) {
         for _ in 0...Int(param) {
             let testArr: [Double] = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]

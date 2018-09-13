@@ -22,6 +22,10 @@ class ComplexDatabaseInsertingTest: Test {
     var dataBase = try! Realm()
     
     override func prepare(param: Double) {
+       
+    }
+    
+    override func done(param: Double) {
         try! dataBase.write {
             dataBase.deleteAll()
         }

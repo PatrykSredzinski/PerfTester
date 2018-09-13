@@ -22,6 +22,10 @@ class SimpleLoopTest: Test {
         
     }
     
+    override func done(param: Double) {
+
+    }
+    
     override func doJob(param: Double) {
         for _ in 0...Int(param) {
         }

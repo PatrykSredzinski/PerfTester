@@ -22,6 +22,10 @@ class SimpleCalculationsAsyncTest: Test {
         
     }
     
+    override func done(param: Double) {
+
+    }
+    
     override func doJob(param: Double) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
             for _ in 0...Int(param) {

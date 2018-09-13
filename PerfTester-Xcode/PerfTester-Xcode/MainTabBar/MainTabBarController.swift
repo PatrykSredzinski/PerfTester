@@ -57,10 +57,10 @@ class MainTabBarController: UITabBarController {
         infoNav.navigationBar.tintColor = UIColor.white
         infoNav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
 
-        let navControllers = [testListNav]
+        let navControllers = [homeNav, testListNav, infoNav]
         viewControllers = navControllers
         
-        selectedIndex = 0
+        selectedIndex = 1
     }
 
 }

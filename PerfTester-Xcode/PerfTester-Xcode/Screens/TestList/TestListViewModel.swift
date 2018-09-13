@@ -16,6 +16,7 @@ class TestListViewModel {
         HeavyCalculationsSyncTest(),
         HeavyCalculationsAsyncTest(),
         SimpleDatabaseInsertingTest(),
-        ComplexDatabaseInsertingTest()
+        ComplexDatabaseInsertingTest(),
+        AssetLoadingTest()
     ]
 }

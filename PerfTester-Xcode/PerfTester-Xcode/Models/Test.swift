@@ -14,6 +14,7 @@ class Test {
     var desc: String = ""
     var imageName: String = ""
     var parameters: [Double] = []
+    weak var detCtr: TestDetailsController!    
         
     private var updateBlock: ((_ results: [Double]) -> Void)?
     private var doneBlock: ((_ results: [Double]) -> Void)?
@@ -23,6 +24,10 @@ class Test {
     }
     
     func doJob(param: Double) {
+        assertionFailure()
+    }
+    
+    func done(param: Double) {
         assertionFailure()
     }
     
@@ -60,10 +65,12 @@ class Test {
     func finishJob(param: Double) {
         let interval = round(max(1,(CFAbsoluteTimeGetCurrent() - timers[currentParam])*1000));
         results[currentParam] = interval
-        
+
+        done(param: param)
         if let updateBlockSet = updateBlock {
             updateBlockSet(results)
         }
+       
         currentParam += 1
         if currentParam < parameters.count {
             startSingleVariantAsync(currentParam)

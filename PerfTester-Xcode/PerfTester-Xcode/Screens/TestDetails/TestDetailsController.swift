@@ -21,6 +21,7 @@ class TestDetailsController: UIViewController {
     init(test: Test) {
         self.test = test
         super.init(nibName: nil, bundle: nil)
+        self.test.detCtr = self
         setupNavigationBar()
     }
     
