@@ -41,10 +41,10 @@ class TestDetailsController: UIViewController {
     
     private func setupTableView() {
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 50
         tableView.register(UINib(nibName: "TestDetailsCell", bundle: nil), forCellReuseIdentifier: "TestDetailsCell")
-        tableView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0)
+        tableView.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 70, right: 0)
     }
     
     private func setupView(test: Test) {

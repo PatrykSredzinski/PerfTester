@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Foundation;
 using CoreFoundation;
+using PerfTesterXamarin.Screens.TestDetails;
 
 namespace PerfTesterXamarin.Models
 {
@@ -13,8 +14,10 @@ namespace PerfTesterXamarin.Models
         public abstract string Desc { get; }
         public abstract string ImageName { get; }
         public abstract double[] Parameters { get; }
+        public WeakReference<TestDetailsController> DetCtr;
 
         public abstract void Prepare(double param);
+        public abstract void Done(double param);
         public abstract void DoJob(double param);
 
         public long[] Results;
@@ -61,6 +64,9 @@ namespace PerfTesterXamarin.Models
         {
             Timers[CurrentParam].Stop();
             Results[CurrentParam] = Math.Max(1,Timers[CurrentParam].ElapsedMilliseconds);
+
+            Done(param);
+
             UpdateBlock(Results);
             CurrentParam++;
             if (CurrentParam < Parameters.Length)

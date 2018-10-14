@@ -15,7 +15,7 @@ class AssetLoadingTest: Test {
     override init() {
         super.init()
         title = "Asset Loading"
-        desc = "Loading and Displaying 10 ImageViews"
+        desc = "Loading and Displaying 5 ImageViews"
         imageName = "Photo"
         parameters = [ 128, 256, 512, 1024, 2560, 5120, 10240 ]
     }
@@ -33,13 +33,12 @@ class AssetLoadingTest: Test {
     }
     
     override func doJob(param: Double) {
-        for i in 1...10 {
+        for i in 1...5 {
             let path = Bundle.main.path(forResource: self.assetName, ofType: "png")!
             let image = UIImage(contentsOfFile: path)
-            //            let image = UIImage(named: self.assetName)
             let imageView = UIImageView(image: image)
             imageView.tag = 3
-            imageView.frame = CGRect(x: i*10, y: i*20, width: 100, height: 100)
+            imageView.frame = CGRect(x: i*20, y: i*30, width: 100, height: 100)
             self.detCtr.view.addSubview(imageView)
         }
         DispatchQueue.main.async {

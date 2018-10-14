@@ -42,7 +42,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchDebug>false</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -192,6 +192,7 @@
     <Folder Include="Assets.xcassets\Shield.imageset\" />
     <Folder Include="Assets.xcassets\Stoper.imageset\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -252,6 +253,17 @@
     <Compile Include="Models\Helpers\Toy.cs" />
     <Compile Include="Models\SimpleCalculationsSync.cs" />
     <Compile Include="Models\SimpleCalculationsAsync.cs" />
+    <Compile Include="Models\AssetLoadingTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Assets\Asset64.png" />
+    <BundleResource Include="Assets\Asset128.png" />
+    <BundleResource Include="Assets\Asset256.png" />
+    <BundleResource Include="Assets\Asset512.png" />
+    <BundleResource Include="Assets\Asset1024.png" />
+    <BundleResource Include="Assets\Asset2560.png" />
+    <BundleResource Include="Assets\Asset5120.png" />
+    <BundleResource Include="Assets\Asset10240.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.2.4.6\build\Fody.targets" Condition="Exists('..\packages\Fody.2.4.6\build\Fody.targets')" />

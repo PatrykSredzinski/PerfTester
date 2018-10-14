@@ -20,7 +20,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="Tests/list.png" translatesAutoresizingMaskIntoConstraints="NO" id="133">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="TestActive" translatesAutoresizingMaskIntoConstraints="NO" id="133">
                         <rect key="frame" x="16" y="0.0" width="50" height="177.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="324"/>
@@ -77,5 +77,13 @@
         <image name="Clock" width="40" height="40"/>
         <image name="Calculator" width="40" height="40"/>
         <image name="Arrow" width="40" height="40"/>
+        <image name="Assets/Asset64.png" width="64" height="64"/>
+        <image name="Assets/Asset128.png" width="128" height="128"/>
+        <image name="Assets/Asset256.png" width="256" height="256"/>
+        <image name="Assets/Asset512.png" width="512" height="512"/>
+        <image name="Assets/Asset1024.png" width="1024" height="1024"/>
+        <image name="Assets/Asset2560.png" width="2560" height="2560"/>
+        <image name="Assets/Asset5120.png" width="5120" height="5120"/>
+        <image name="Assets/Asset10240.png" width="10240" height="10240"/>
     </resources>
 </document>

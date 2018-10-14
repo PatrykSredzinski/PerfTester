@@ -20,6 +20,9 @@ namespace PerfTesterXamarin.Models
             });
         }
 
+        public override void Done(double param)
+        { }
+
         public override void DoJob(double param)
         {
             DataBase.Write(() =>

@@ -14,6 +14,9 @@ namespace PerfTesterXamarin.Models
         public override void Prepare(double param)
         { }
 
+        public override void Done(double param)
+        { }
+
         public override void DoJob(double param)
         {
             DispatchQueue.GetGlobalQueue(DispatchQueuePriority.Default).DispatchAsync(() =>

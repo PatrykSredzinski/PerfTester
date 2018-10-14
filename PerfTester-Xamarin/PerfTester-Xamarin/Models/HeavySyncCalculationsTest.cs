@@ -13,6 +13,9 @@ namespace PerfTesterXamarin.Models
         public override void Prepare(double param)
         {}
 
+        public override void Done(double param)
+        { }
+
         public override void DoJob(double param)
         {
             for (long i = 0; i < param; i++)

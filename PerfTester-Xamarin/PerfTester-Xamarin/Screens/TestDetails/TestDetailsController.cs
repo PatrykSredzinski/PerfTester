@@ -13,6 +13,7 @@ namespace PerfTesterXamarin.Screens.TestDetails
         public TestDetailsController(Test test) : base("TestDetailsController", null)
         {
             Test = test;
+            Test.DetCtr = new WeakReference<TestDetailsController>(this);
             SetupNavigationBar();
         }
 
