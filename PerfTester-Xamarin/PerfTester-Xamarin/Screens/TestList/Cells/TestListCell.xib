@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="132">
-                        <rect key="frame" x="82" y="8" width="301" height="137.5"/>
+                        <rect key="frame" x="82" y="8" width="301" height="145.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,7 +27,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="134">
-                        <rect key="frame" x="82" y="154" width="301" height="16"/>
+                        <rect key="frame" x="82" y="153.5" width="301" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,13 +37,13 @@
                     <constraint firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="135"/>
                     <constraint firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="-16" id="136"/>
                     <constraint firstAttribute="bottom" secondItem="133" secondAttribute="bottom" id="137"/>
-                    <constraint firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" constant="8" id="142"/>
+                    <constraint firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" id="142" constant="8"/>
                     <constraint firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing" constant="16" id="143"/>
                     <constraint firstAttribute="trailing" secondItem="132" secondAttribute="trailing" constant="8" id="144"/>
                     <constraint firstItem="134" firstAttribute="leading" secondItem="132" secondAttribute="leading" id="146"/>
                     <constraint firstItem="134" firstAttribute="trailing" secondItem="132" secondAttribute="trailing" id="147"/>
-                    <constraint firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom" constant="8" id="148"/>
-                    <constraint firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" constant="8" id="149"/>
+                    <constraint firstItem="133" firstAttribute="bottom" secondItem="134" secondAttribute="bottom" id="148" constant="8"/>
+                    <constraint firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" id="149"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedWhite" white="0" alpha="0"/>

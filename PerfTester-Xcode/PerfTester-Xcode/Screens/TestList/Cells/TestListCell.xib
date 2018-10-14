@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,7 +38,6 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="L6Z-Lh-aBZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1YJ-AS-k7f"/>
                     <constraint firstItem="L6Z-Lh-aBZ" firstAttribute="leading" secondItem="YUb-PZ-MXb" secondAttribute="trailing" constant="16" id="6bb-Ux-fdE"/>
                     <constraint firstItem="gKu-gl-tLD" firstAttribute="top" secondItem="L6Z-Lh-aBZ" secondAttribute="bottom" id="NFz-f6-1at"/>
                     <constraint firstItem="YUb-PZ-MXb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SAH-Rr-9BT"/>
@@ -49,6 +47,7 @@
                     <constraint firstItem="gKu-gl-tLD" firstAttribute="leading" secondItem="L6Z-Lh-aBZ" secondAttribute="leading" id="oQt-6x-Y4h"/>
                     <constraint firstItem="gKu-gl-tLD" firstAttribute="bottom" secondItem="YUb-PZ-MXb" secondAttribute="bottom" constant="-8" id="pwA-Xb-VeS"/>
                     <constraint firstAttribute="bottom" secondItem="YUb-PZ-MXb" secondAttribute="bottom" id="qP8-KO-7Kq"/>
+                    <constraint firstItem="L6Z-Lh-aBZ" firstAttribute="top" secondItem="YUb-PZ-MXb" secondAttribute="top" constant="8" id="y3T-FO-6kM"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
