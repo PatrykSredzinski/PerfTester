@@ -46,6 +46,8 @@
 		60CD736420CB206400EE9115 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD736320CB206400EE9115 /* TestListViewModel.swift */; };
 		60CD736720CB212500EE9115 /* TestListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CD736520CB212500EE9115 /* TestListCell.xib */; };
 		60CD736820CB212500EE9115 /* TestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD736620CB212500EE9115 /* TestListCell.swift */; };
+		60EA18422191AB6800346815 /* ComplicatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18402191AB6800346815 /* ComplicatedController.swift */; };
+		60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18432191AD2900346815 /* LoadingControllerTest.swift */; };
 		61F398032D6ADC66D23F855B /* Pods_PerfTester_Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FCD275BEF917014D96987E /* Pods_PerfTester_Xcode.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		60CD736320CB206400EE9115 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
 		60CD736520CB212500EE9115 /* TestListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestListCell.xib; sourceTree = "<group>"; };
 		60CD736620CB212500EE9115 /* TestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListCell.swift; sourceTree = "<group>"; };
+		60EA18402191AB6800346815 /* ComplicatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicatedController.swift; sourceTree = "<group>"; };
+		60EA18432191AD2900346815 /* LoadingControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerTest.swift; sourceTree = "<group>"; };
 		EB7358AB7E4F0833145CCA31 /* Pods-PerfTester-Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfTester-Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfTester-Xcode/Pods-PerfTester-Xcode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +127,7 @@
 				606B77F420E16FBC00871284 /* Toy.swift */,
 				6042F98420DFAFD800FEF480 /* Dog.swift */,
 				6042F98620DFAFE100FEF480 /* Person.swift */,
+				60EA18402191AB6800346815 /* ComplicatedController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				6042F98820DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift */,
 				606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */,
 				60C3139020EA9E140018A5E7 /* AssetLoadingTest.swift */,
+				60EA18432191AD2900346815 /* LoadingControllerTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,7 +443,9 @@
 				6042F98520DFAFD800FEF480 /* Dog.swift in Sources */,
 				606B77F320E16F9300871284 /* ComplexDatabaseInsertingTest.swift in Sources */,
 				60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */,
+				60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */,
 				60CD735620CB16F000EE9115 /* InfoController.swift in Sources */,
+				60EA18422191AB6800346815 /* ComplicatedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
