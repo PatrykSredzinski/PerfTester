@@ -18,6 +18,7 @@ class TestListViewModel {
         SimpleDatabaseInsertingTest(),
         ComplexDatabaseInsertingTest(),
         AssetLoadingTest(),
-        LoadingControllerTest()
+        LoadingControllerTest(),
+        LoadingComplicatedControllerTest()
     ]
 }

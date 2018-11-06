@@ -48,6 +48,8 @@
 		60CD736820CB212500EE9115 /* TestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD736620CB212500EE9115 /* TestListCell.swift */; };
 		60EA18422191AB6800346815 /* ComplicatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18402191AB6800346815 /* ComplicatedController.swift */; };
 		60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18432191AD2900346815 /* LoadingControllerTest.swift */; };
+		60EA18462191CBE700346815 /* SimpleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18452191CBE700346815 /* SimpleController.swift */; };
+		60EA18482191CD9300346815 /* LoadingComplicatedControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */; };
 		61F398032D6ADC66D23F855B /* Pods_PerfTester_Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FCD275BEF917014D96987E /* Pods_PerfTester_Xcode.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,8 @@
 		60CD736620CB212500EE9115 /* TestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListCell.swift; sourceTree = "<group>"; };
 		60EA18402191AB6800346815 /* ComplicatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicatedController.swift; sourceTree = "<group>"; };
 		60EA18432191AD2900346815 /* LoadingControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerTest.swift; sourceTree = "<group>"; };
+		60EA18452191CBE700346815 /* SimpleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleController.swift; sourceTree = "<group>"; };
+		60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComplicatedControllerTest.swift; sourceTree = "<group>"; };
 		EB7358AB7E4F0833145CCA31 /* Pods-PerfTester-Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfTester-Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfTester-Xcode/Pods-PerfTester-Xcode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +132,7 @@
 				6042F98420DFAFD800FEF480 /* Dog.swift */,
 				6042F98620DFAFE100FEF480 /* Person.swift */,
 				60EA18402191AB6800346815 /* ComplicatedController.swift */,
+				60EA18452191CBE700346815 /* SimpleController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */,
 				60C3139020EA9E140018A5E7 /* AssetLoadingTest.swift */,
 				60EA18432191AD2900346815 /* LoadingControllerTest.swift */,
+				60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 				60C3139120EA9E140018A5E7 /* AssetLoadingTest.swift in Sources */,
 				60C46CBC20EA93E800457A12 /* SimpleCalculationsSyncTest.swift in Sources */,
 				6091D00120DEE1E100D8F748 /* CSVHelper.swift in Sources */,
+				60EA18482191CD9300346815 /* LoadingComplicatedControllerTest.swift in Sources */,
 				60CD735220CB16DF00EE9115 /* HomeController.swift in Sources */,
 				60C19BA7209F068500E45DDE /* ViewController.swift in Sources */,
 				60CD735A20CB16FC00EE9115 /* TestDetailsController.swift in Sources */,
@@ -442,6 +449,7 @@
 				6042F98720DFAFE100FEF480 /* Person.swift in Sources */,
 				6042F98520DFAFD800FEF480 /* Dog.swift in Sources */,
 				606B77F320E16F9300871284 /* ComplexDatabaseInsertingTest.swift in Sources */,
+				60EA18462191CBE700346815 /* SimpleController.swift in Sources */,
 				60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */,
 				60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */,
 				60CD735620CB16F000EE9115 /* InfoController.swift in Sources */,

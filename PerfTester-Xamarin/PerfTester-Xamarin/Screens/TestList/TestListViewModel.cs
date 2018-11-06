@@ -15,7 +15,8 @@ namespace PerfTesterXamarin.Screens.TestList
             new SimpleDatabaseInsertionTest(),
             new ComplexDatabaseInsertionTest(),
             new AssetLoadingTest(),
-            new LoadingControllerTest()
+            new LoadingControllerTest(),
+            new LoadingComplicatedControllerTest()
         };
     }
 }
