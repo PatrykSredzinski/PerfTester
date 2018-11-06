@@ -10,15 +10,19 @@ import UIKit
 
 class CSVHelper {
 
+    static let defaultIP = "10.12.141.70:8080"
+
     static func saveTestResults(test: Test) {
-        let fileName = getFileName(test: test)
-        let parsedData = parseResultsIntoString(test: test)
-        let fileManager = FileManager.default
-        do {
-            let documentDirectory = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor:nil, create:false)
-            let fileURL = documentDirectory.appendingPathComponent(fileName)
-            try parsedData.write(to: fileURL, atomically: true, encoding: .utf8)
-        } catch {
+        getIPFromAlert() { ip in
+            let fileName = getFileName(test: test)
+            let parsedData = parseResultsIntoString(test: test)
+            let stringUrl = "http://\(ip)/export.php?name=\(fileName)&data=\(parsedData)"
+            let encodedUrl = stringUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            if let urlSet = URL(string: encodedUrl ?? "") {
+                URLSession.shared.dataTask(with: urlSet, completionHandler: { data, response, error in
+                    print("HEY")
+                }).resume()
+            }
         }
     }
     
@@ -27,7 +31,7 @@ class CSVHelper {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
-        return String(format: "%@-%@.csv", dateString, test.title)
+        return String(format: "Xcode-%@-%@.csv", dateString, test.title)
     }
     
     fileprivate static func parseResultsIntoString(test: Test) -> String {
@@ -41,5 +45,20 @@ class CSVHelper {
         }
         
         return finString
+    }
+    
+    fileprivate static func getIPFromAlert(completion: @escaping (String) -> Void) {
+        let alert = UIAlertController(title: "Where to save?", message: "Insert IP address to export data", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Save", style: .default) { _ in
+            completion(alert.textFields?.first?.text ?? defaultIP)
+        }
+        let cancelButton = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        alert.addTextField { tF in
+            tF.placeholder = "IP Address"
+            tF.text = defaultIP
+        }
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        UIApplication.shared.delegate?.window??.rootViewController?.present(alert, animated: true, completion: nil)
     }
 }
