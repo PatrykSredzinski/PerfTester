@@ -19,9 +19,7 @@ class CSVHelper {
             let stringUrl = "http://\(ip)/export.php?name=\(fileName)&data=\(parsedData)"
             let encodedUrl = stringUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
             if let urlSet = URL(string: encodedUrl ?? "") {
-                URLSession.shared.dataTask(with: urlSet, completionHandler: { data, response, error in
-                    print("HEY")
-                }).resume()
+                URLSession.shared.dataTask(with: urlSet).resume()
             }
         }
     }
@@ -54,7 +52,6 @@ class CSVHelper {
         }
         let cancelButton = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         alert.addTextField { tF in
-            tF.placeholder = "IP Address"
             tF.text = defaultIP
         }
         alert.addAction(okButton)

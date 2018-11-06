@@ -2,18 +2,28 @@
 using System.IO;
 using Foundation;
 using PerfTesterXamarin.Models;
+using UIKit;
 
 namespace PerfTesterXamarin.Helpers
 {
     public class CSVHelper
     {
+        static string defaultIP = "10.12.141.70:8080";
         public static void SaveTestResults(Test test)
         {
-            var fileName = GetFileName(test);
-            var parsedData = ParseResultsIntoString(test);
-            var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var url = Path.Combine(documents, fileName);
-            File.WriteAllText(url, parsedData);
+            GetIPFromAlert((ip) => 
+            {
+                var fileName = GetFileName(test);
+                var parsedData = ParseResultsIntoString(test);
+                var stringUrl = String.Format("http://{0}/export.php?name={1}&data={2}", defaultIP, fileName, parsedData);
+                var uri = new Uri(stringUrl);
+                var urlSet = new NSUrl(uri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
+                if (urlSet != null)
+                {
+                    NSUrlSession.SharedSession.CreateDataTask(new NSUrlRequest(urlSet)).Resume();
+                }
+            });
+
         }
 
         static string GetFileName(Test test)
@@ -22,7 +32,7 @@ namespace PerfTesterXamarin.Helpers
             var dateFormatter = new NSDateFormatter();
             dateFormatter.DateFormat = "yyyy-MM-dd";
             var dateString = dateFormatter.ToString(date);
-            return String.Format("{0}-{1}.csv", dateString, test.Title);
+            return String.Format("Xamar-{0}-{1}.csv", dateString, test.Title);
         }
 
         static String ParseResultsIntoString(Test test)
@@ -35,6 +45,23 @@ namespace PerfTesterXamarin.Helpers
                 finString += String.Format("{0},{1}\n", variant, result);
             }
             return finString;
+        }
+
+        static void GetIPFromAlert(Action<String> completion)
+        {
+            UIAlertController alert = UIAlertController.Create("Where to save?", "Insert IP address to export data", UIAlertControllerStyle.Alert);
+            UIAlertAction okButton = UIAlertAction.Create("Save", UIAlertActionStyle.Default, (obj) =>
+            {
+                completion(alert.TextFields[0].Text);
+            });
+            UIAlertAction cancelButton = UIAlertAction.Create("Cancel", UIAlertActionStyle.Destructive, null);
+            alert.AddTextField( (tF) => 
+            {
+                tF.Text = defaultIP;
+            });
+            alert.AddAction(okButton);
+            alert.AddAction(cancelButton);
+            UIApplication.SharedApplication.Delegate.GetWindow().RootViewController.PresentViewController(alert, true, null);
         }
     }
 }
