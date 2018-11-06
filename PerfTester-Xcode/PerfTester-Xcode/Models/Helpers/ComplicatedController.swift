@@ -38,7 +38,7 @@ class ComplicatedController: UIViewController {
         let nextCounter = counter + 1
         if nextCounter > maxCounter {
             self.navigationController?.popToViewController(self.navigationController!.viewControllers[1], animated: false)
-            self.delegate?.poppedBack(maxCounter: maxCounter)
+            self.delegate?.poppedBack(maxCounter: self.maxCounter)
         } else {
             let nextCtr = ComplicatedController(delegate: delegate, counter: counter+1, maxCounter: maxCounter)
             self.navigationController?.pushViewController(nextCtr, animated: false)

@@ -8,14 +8,14 @@
 
 import UIKit
 
-class LoadingControllerTest: Test {
+class LoadingControllerTest: Test, ComplicatedControllerDelegate {
     
     override init() {
         super.init()
         title = "Loading Controller Test"
         desc = "Loading a complicated view controller with AutoLayout and pushing it on a navigation stack"
         imageName = "Phone"
-        parameters = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        parameters = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 150, 200, 250]
     }
     
     override func prepare(param: Double) {
@@ -30,9 +30,7 @@ class LoadingControllerTest: Test {
         let tCtr = ComplicatedController(delegate: self, counter: 1, maxCounter: Int(param))
         detCtr.navigationController?.pushViewController(tCtr, animated: false)
     }
-}
-
-extension LoadingControllerTest: ComplicatedControllerDelegate {
+    
     func poppedBack(maxCounter: Int) {
         super.finishJob(param: Double(maxCounter))
     }
