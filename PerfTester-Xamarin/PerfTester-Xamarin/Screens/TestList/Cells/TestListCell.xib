@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,28 +15,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="132">
-                        <rect key="frame" x="82" y="8" width="301" height="145.5"/>
+                        <rect key="frame" x="82" y="16" width="301" height="129.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="800" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="TestActive" translatesAutoresizingMaskIntoConstraints="NO" id="133">
-                        <rect key="frame" x="16" y="0.0" width="50" height="177.5"/>
+                        <rect key="frame" x="16" y="8" width="50" height="161.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="324"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="134">
-                        <rect key="frame" x="82" y="153.5" width="301" height="16"/>
+                        <rect key="frame" x="82" y="145.5" width="301" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="135"/>
+                    <constraint firstItem="133" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" id="135" constant="8"/>
                     <constraint firstAttribute="leading" secondItem="133" secondAttribute="leading" constant="-16" id="136"/>
-                    <constraint firstAttribute="bottom" secondItem="133" secondAttribute="bottom" id="137"/>
+                    <constraint firstAttribute="bottom" secondItem="133" secondAttribute="bottom" id="137" constant="8"/>
                     <constraint firstItem="132" firstAttribute="top" secondItem="133" secondAttribute="top" id="142" constant="8"/>
                     <constraint firstItem="132" firstAttribute="leading" secondItem="133" secondAttribute="trailing" constant="16" id="143"/>
                     <constraint firstAttribute="trailing" secondItem="132" secondAttribute="trailing" constant="8" id="144"/>
@@ -46,7 +46,7 @@
                     <constraint firstItem="134" firstAttribute="top" secondItem="132" secondAttribute="bottom" id="149"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" customColorSpace="sRGB" colorSpace="calibratedWhite" white="0" alpha="0"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="DescLabel" destination="134" id="name-outlet-134"/>
                 <outlet property="TestImage" destination="133" id="name-outlet-133"/>
@@ -56,34 +56,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="HomeActive" width="40" height="40"/>
-        <image name="UserDefault" width="40" height="40"/>
-        <image name="UserActive" width="40" height="40"/>
-        <image name="TestDefault" width="40" height="40"/>
         <image name="TestActive" width="40" height="40"/>
-        <image name="HomeDefault" width="40" height="40"/>
-        <image name="Stoper" width="40" height="40"/>
-        <image name="Shield" width="40" height="40"/>
-        <image name="Photo" width="40" height="40"/>
-        <image name="Phone" width="40" height="40"/>
-        <image name="Multithreading" width="40" height="40"/>
-        <image name="Maths" width="40" height="40"/>
-        <image name="Lock" width="40" height="40"/>
-        <image name="List" width="40" height="40"/>
-        <image name="JSON" width="40" height="40"/>
-        <image name="Flow" width="40" height="40"/>
-        <image name="Devices" width="40" height="40"/>
-        <image name="DataBase" width="40" height="40"/>
-        <image name="Clock" width="40" height="40"/>
-        <image name="Calculator" width="40" height="40"/>
-        <image name="Arrow" width="40" height="40"/>
-        <image name="Assets/Asset64.png" width="64" height="64"/>
-        <image name="Assets/Asset128.png" width="128" height="128"/>
-        <image name="Assets/Asset256.png" width="256" height="256"/>
-        <image name="Assets/Asset512.png" width="512" height="512"/>
-        <image name="Assets/Asset1024.png" width="1024" height="1024"/>
-        <image name="Assets/Asset2560.png" width="2560" height="2560"/>
-        <image name="Assets/Asset5120.png" width="5120" height="5120"/>
-        <image name="Assets/Asset10240.png" width="10240" height="10240"/>
     </resources>
 </document>
