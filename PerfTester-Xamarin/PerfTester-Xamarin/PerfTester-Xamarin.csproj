@@ -262,6 +262,8 @@
     <Compile Include="Models\UserDefaultsLoadTest.cs" />
     <Compile Include="Models\SimpleDatabaseLoadingTest.cs" />
     <Compile Include="Models\RandomizingTest.cs" />
+    <Compile Include="Models\JsonDeserializationTest.cs" />
+    <Compile Include="Models\Helpers\Employee.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Assets\Asset64.png" />
@@ -272,6 +274,11 @@
     <BundleResource Include="Assets\Asset2560.png" />
     <BundleResource Include="Assets\Asset5120.png" />
     <BundleResource Include="Assets\Asset10240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON100.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON1000.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON10000.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.3.2.16\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.16\build\Fody.targets')" />

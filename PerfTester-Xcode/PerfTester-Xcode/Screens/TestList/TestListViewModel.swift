@@ -23,6 +23,7 @@ class TestListViewModel {
         LoadingControllerTest(),
         LoadingComplicatedControllerTest(),
         UserDefaultsSaveTest(),
-        UserDefaultsLoadTest()
+        UserDefaultsLoadTest(),
+        JsonDeserializationTest()
     ]
 }

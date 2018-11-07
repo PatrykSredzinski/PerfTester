@@ -10,6 +10,11 @@
 		6016CEDA20CBDC4100822F00 /* TestDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6016CED820CBDC4100822F00 /* TestDetailsCell.xib */; };
 		6016CEDB20CBDC4100822F00 /* TestDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016CED920CBDC4100822F00 /* TestDetailsCell.swift */; };
 		6036D27E219304CA001F0A42 /* RandomizingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036D27D219304CA001F0A42 /* RandomizingTest.swift */; };
+		6036D28021930802001F0A42 /* JsonDeserializationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036D27F21930802001F0A42 /* JsonDeserializationTest.swift */; };
+		6036D2822193092B001F0A42 /* EmployeeDataJSON1000.json in Resources */ = {isa = PBXBuildFile; fileRef = 6036D2812193092B001F0A42 /* EmployeeDataJSON1000.json */; };
+		6036D2842193095A001F0A42 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036D2832193095A001F0A42 /* Employee.swift */; };
+		6036D28A219311C0001F0A42 /* EmployeeDataJSON10000.json in Resources */ = {isa = PBXBuildFile; fileRef = 6036D289219311C0001F0A42 /* EmployeeDataJSON10000.json */; };
+		6036D28C219311F4001F0A42 /* EmployeeDataJSON100.json in Resources */ = {isa = PBXBuildFile; fileRef = 6036D28B219311F4001F0A42 /* EmployeeDataJSON100.json */; };
 		6041623F20CDA02800C5C445 /* SimpleLoopTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041623E20CDA02800C5C445 /* SimpleLoopTest.swift */; };
 		6042F98520DFAFD800FEF480 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98420DFAFD800FEF480 /* Dog.swift */; };
 		6042F98720DFAFE100FEF480 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6042F98620DFAFE100FEF480 /* Person.swift */; };
@@ -63,6 +68,11 @@
 		6016CED820CBDC4100822F00 /* TestDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestDetailsCell.xib; sourceTree = "<group>"; };
 		6016CED920CBDC4100822F00 /* TestDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailsCell.swift; sourceTree = "<group>"; };
 		6036D27D219304CA001F0A42 /* RandomizingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizingTest.swift; sourceTree = "<group>"; };
+		6036D27F21930802001F0A42 /* JsonDeserializationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDeserializationTest.swift; sourceTree = "<group>"; };
+		6036D2812193092B001F0A42 /* EmployeeDataJSON1000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeDataJSON1000.json; sourceTree = "<group>"; };
+		6036D2832193095A001F0A42 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		6036D289219311C0001F0A42 /* EmployeeDataJSON10000.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeDataJSON10000.json; sourceTree = "<group>"; };
+		6036D28B219311F4001F0A42 /* EmployeeDataJSON100.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmployeeDataJSON100.json; sourceTree = "<group>"; };
 		6041623E20CDA02800C5C445 /* SimpleLoopTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoopTest.swift; sourceTree = "<group>"; };
 		6042F98420DFAFD800FEF480 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		6042F98620DFAFE100FEF480 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -139,8 +149,12 @@
 				606B77F420E16FBC00871284 /* Toy.swift */,
 				6042F98420DFAFD800FEF480 /* Dog.swift */,
 				6042F98620DFAFE100FEF480 /* Person.swift */,
+				6036D2832193095A001F0A42 /* Employee.swift */,
 				60EA18402191AB6800346815 /* ComplicatedController.swift */,
 				60EA18452191CBE700346815 /* SimpleController.swift */,
+				6036D28B219311F4001F0A42 /* EmployeeDataJSON100.json */,
+				6036D2812193092B001F0A42 /* EmployeeDataJSON1000.json */,
+				6036D289219311C0001F0A42 /* EmployeeDataJSON10000.json */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +244,7 @@
 				60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */,
 				60EA18492191DF1200346815 /* UserDefaultsSaveTest.swift */,
 				60EA184B2191E44100346815 /* UserDefaultsLoadTest.swift */,
+				6036D27F21930802001F0A42 /* JsonDeserializationTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,13 +392,16 @@
 				60C19BAF209F068500E45DDE /* LaunchScreen.storyboard in Resources */,
 				60CD736720CB212500EE9115 /* TestListCell.xib in Resources */,
 				6016CEDA20CBDC4100822F00 /* TestDetailsCell.xib in Resources */,
+				6036D28C219311F4001F0A42 /* EmployeeDataJSON100.json in Resources */,
 				60C3139E20EAB69E0018A5E7 /* Asset5120.png in Resources */,
 				60CD735120CB16DF00EE9115 /* HomeController.xib in Resources */,
 				60C3139C20EAB69E0018A5E7 /* Asset1024.png in Resources */,
 				60C19BAC209F068500E45DDE /* Assets.xcassets in Resources */,
 				60C3139D20EAB69E0018A5E7 /* Asset2560.png in Resources */,
 				60C3139F20EAB69E0018A5E7 /* Asset128.png in Resources */,
+				6036D28A219311C0001F0A42 /* EmployeeDataJSON10000.json in Resources */,
 				60CD735920CB16FC00EE9115 /* TestDetailsController.xib in Resources */,
+				6036D2822193092B001F0A42 /* EmployeeDataJSON1000.json in Resources */,
 				60C313A220EAB69E0018A5E7 /* Asset256.png in Resources */,
 				60C313A120EAB69E0018A5E7 /* Asset512.png in Resources */,
 				60CD735520CB16F000EE9115 /* InfoController.xib in Resources */,
@@ -464,6 +482,8 @@
 				6042F98720DFAFE100FEF480 /* Person.swift in Sources */,
 				6042F98520DFAFD800FEF480 /* Dog.swift in Sources */,
 				606B77F320E16F9300871284 /* ComplexDatabaseInsertingTest.swift in Sources */,
+				6036D2842193095A001F0A42 /* Employee.swift in Sources */,
+				6036D28021930802001F0A42 /* JsonDeserializationTest.swift in Sources */,
 				60EA18462191CBE700346815 /* SimpleController.swift in Sources */,
 				60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */,
 				60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */,

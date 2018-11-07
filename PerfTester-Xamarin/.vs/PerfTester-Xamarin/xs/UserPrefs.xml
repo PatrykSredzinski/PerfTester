@@ -1,24 +1,35 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
   <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2b737d9cefd8fcf04e32042200d9dad3ca924be5" HideGettingStarted="True" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/Screens/TestList/Cells/TestListCell.xib">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/Models/Helpers/EmployeeDataJSON10000.json">
     <Files>
       <File FileName="PerfTester-Xamarin/Models/HeavyAsyncCalculationsTest.cs" Line="1" Column="1" />
       <File FileName="PerfTester-Xamarin/Models/HeavySyncCalculationsTest.cs" Line="1" Column="1" />
       <File FileName="PerfTester-Xamarin/Models/SimpleDatabaseLoadingTest.cs" Line="1" Column="1" />
       <File FileName="PerfTester-Xamarin/Models/SimpleDatabaseInsertionTest.cs" Line="1" Column="1" />
-      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="13" Column="44" />
+      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="24" Column="42" />
       <File FileName="PerfTester-Xamarin/Models/SimpleLoopTest.cs" Line="1" Column="1" />
       <File FileName="PerfTester-Xamarin/Models/AssetLoadingTest.cs" Line="1" Column="1" />
-      <File FileName="PerfTester-Xamarin/Models/Test.cs" Line="1" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/Test.cs" Line="54" Column="9" />
       <File FileName="PerfTester-Xamarin/Models/RandomizingTest.cs" Line="4" Column="33" />
       <File FileName="PerfTester-Xamarin/Models/SimpleCalculationsAsyncTest.cs" Line="6" Column="45" />
       <File FileName="PerfTester-Xamarin/Models/SimpleCalculationsSyncTest.cs" Line="26" Column="9" />
       <File FileName="PerfTester-Xamarin/Screens/TestList/Cells/TestListCell.xib" />
+      <File FileName="PerfTester-Xamarin/Models/JsonDeserializationTest.cs" Line="25" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/UserDefaultsLoadTest.cs" Line="6" Column="38" />
+      <File FileName="PerfTester-Xamarin/Models/Helpers/Employee.cs" Line="27" Column="27" />
+      <File FileName="PerfTester-Xamarin/Models/Helpers/Dog.cs" Line="9" Column="1" />
+      <File FileName="PerfTester-Xamarin/Main.cs" Line="12" Column="39" />
+      <File FileName="PerfTester-Xamarin/Models/Helpers/EmployeeDataJSON100.json" Line="1" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/Helpers/EmployeeDataJSON1000.json" Line="1" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/UserDefaultsSaveTest.cs" Line="1" Column="1" />
+      <File FileName="PerfTester-Xamarin/Models/Helpers/EmployeeDataJSON10000.json" Line="16" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/patryksredzinski/Projects/PerfTester/PerfTester-Xamarin/PerfTester-Xamarin/Models/JsonDeserializationTest.cs" relfile="PerfTester-Xamarin/Models/JsonDeserializationTest.cs" line="22" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

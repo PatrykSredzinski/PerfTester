@@ -20,7 +20,8 @@ namespace PerfTesterXamarin.Screens.TestList
             new LoadingControllerTest(),
             new LoadingComplicatedControllerTest(),
             new UserDefaultsSaveTest(),
-            new UserDefaultsLoadTest()
+            new UserDefaultsLoadTest(),
+            new JsonDeserializationTest()
         };
     }
 }
