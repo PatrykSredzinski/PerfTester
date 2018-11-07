@@ -15,7 +15,7 @@ namespace PerfTesterXamarin.Models
         public override string Title => "Deserializing JSON file";
         public override string Desc => "Parsing and creating N Employees objects from JSON";
         public override string ImageName => "JSON";
-        public override double[] Parameters => new double[] { 100 , 1000, 10000 };
+        public override double[] Parameters => new double[] { 100 , 200, 500, 1000, 2000, 5000, 10000 };
 
         public override void Prepare(double param)
         {

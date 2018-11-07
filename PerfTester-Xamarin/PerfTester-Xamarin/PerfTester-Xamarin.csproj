@@ -279,6 +279,10 @@
     <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON100.json" />
     <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON1000.json" />
     <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON10000.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON200.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON2000.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON500.json" />
+    <EmbeddedResource Include="Models\Helpers\EmployeeDataJSON5000.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.3.2.16\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.16\build\Fody.targets')" />

@@ -17,7 +17,7 @@ class JsonDeserializationTest: Test {
         title = "Deserializing JSON file"
         desc = "Parsing and creating N Employees objects from JSON"
         imageName = "JSON"
-        parameters = [ 100, 1000, 10000 ]
+        parameters = [ 100, 200, 500, 1000, 2000, 5000, 10000 ]
     }
     
     override func prepare(param: Double) {
@@ -39,17 +39,13 @@ class JsonDeserializationTest: Test {
             let arrayData = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [[String:Any]]
             arrayData.forEach { singleData in
                 let e = Employee()
-                e.id = singleData["id"] as! Int
+                e.id = singleData["id"] as! String
                 e.firstName = singleData["firstName"] as! String
                 e.lastName = singleData["lastName"] as! String
                 e.email = singleData["email"] as! String
                 e.phone = singleData["phone"] as! String
-                e.address = singleData["address"] as! String
-                e.balance = singleData["balance"] as! String
-                e.company = singleData["company"] as! String
                 employees.append(e)
             }
-            print(employees.count)
         } catch { }
         super.finishJob(param: param)
     }
