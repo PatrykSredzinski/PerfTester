@@ -1,6 +1,14 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
   <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7DF27E45-AE28-4594-83FC-22431E7B09A0" HideGettingStarted="True" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs">
+    <Files>
+      <File FileName="PerfTester-Xamarin/Models/HeavyAsyncCalculationsTest.cs" Line="24" Column="24" />
+      <File FileName="PerfTester-Xamarin/Models/HeavySyncCalculationsTest.cs" Line="24" Column="58" />
+      <File FileName="PerfTester-Xamarin/Models/SimpleDatabaseLoadingTest.cs" Line="8" Column="43" />
+      <File FileName="PerfTester-Xamarin/Models/SimpleDatabaseInsertionTest.cs" Line="7" Column="44" />
+      <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="17" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -260,6 +260,7 @@
     <Compile Include="Models\LoadingComplicatedControllerTest.cs" />
     <Compile Include="Models\UserDefaultsSaveTest.cs" />
     <Compile Include="Models\UserDefaultsLoadTest.cs" />
+    <Compile Include="Models\SimpleDatabaseLoadingTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Assets\Asset64.png" />

@@ -34,7 +34,7 @@ class ComplexDatabaseInsertingTest: Test {
     override func doJob(param: Double) {
         
         try! dataBase.write({
-            for i in 0...Int(param) {
+            for i in 1...Int(param) {
                 let person = Person()
                 person.id = i
                 person.name = "Patryk"

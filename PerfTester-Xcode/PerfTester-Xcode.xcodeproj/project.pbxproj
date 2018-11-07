@@ -46,6 +46,7 @@
 		60CD736420CB206400EE9115 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD736320CB206400EE9115 /* TestListViewModel.swift */; };
 		60CD736720CB212500EE9115 /* TestListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CD736520CB212500EE9115 /* TestListCell.xib */; };
 		60CD736820CB212500EE9115 /* TestListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CD736620CB212500EE9115 /* TestListCell.swift */; };
+		60DE80C92192D54800D58B19 /* SimpleDatabaseLoadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE80C82192D54800D58B19 /* SimpleDatabaseLoadingTest.swift */; };
 		60EA18422191AB6800346815 /* ComplicatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18402191AB6800346815 /* ComplicatedController.swift */; };
 		60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18432191AD2900346815 /* LoadingControllerTest.swift */; };
 		60EA18462191CBE700346815 /* SimpleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18452191CBE700346815 /* SimpleController.swift */; };
@@ -99,6 +100,7 @@
 		60CD736320CB206400EE9115 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
 		60CD736520CB212500EE9115 /* TestListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestListCell.xib; sourceTree = "<group>"; };
 		60CD736620CB212500EE9115 /* TestListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListCell.swift; sourceTree = "<group>"; };
+		60DE80C82192D54800D58B19 /* SimpleDatabaseLoadingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDatabaseLoadingTest.swift; sourceTree = "<group>"; };
 		60EA18402191AB6800346815 /* ComplicatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicatedController.swift; sourceTree = "<group>"; };
 		60EA18432191AD2900346815 /* LoadingControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingControllerTest.swift; sourceTree = "<group>"; };
 		60EA18452191CBE700346815 /* SimpleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				60C7CDF020CBEBCE0039C1DE /* HeavyCalculationsAsyncTest.swift */,
 				6042F98820DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift */,
 				606B77F220E16F9300871284 /* ComplexDatabaseInsertingTest.swift */,
+				60DE80C82192D54800D58B19 /* SimpleDatabaseLoadingTest.swift */,
 				60C3139020EA9E140018A5E7 /* AssetLoadingTest.swift */,
 				60EA18432191AD2900346815 /* LoadingControllerTest.swift */,
 				60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */,
@@ -460,6 +463,7 @@
 				60EA18462191CBE700346815 /* SimpleController.swift in Sources */,
 				60C46CBE20EA93F700457A12 /* SimpleCalculationsAsyncTest.swift in Sources */,
 				60EA18442191AD2900346815 /* LoadingControllerTest.swift in Sources */,
+				60DE80C92192D54800D58B19 /* SimpleDatabaseLoadingTest.swift in Sources */,
 				60CD735620CB16F000EE9115 /* InfoController.swift in Sources */,
 				60EA18422191AB6800346815 /* ComplicatedController.swift in Sources */,
 			);
