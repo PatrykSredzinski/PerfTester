@@ -11,6 +11,7 @@ import UIKit
 class TestListViewModel {
     let allTests = [
         SimpleLoopTest(),
+        RandomizingTest(),
         SimpleCalculationsSyncTest(),
         SimpleCalculationsAsyncTest(),
         HeavyCalculationsSyncTest(),

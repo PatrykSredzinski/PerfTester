@@ -8,8 +8,9 @@ namespace PerfTesterXamarin.Screens.TestList
         public Test[] AllTests = new Test[] 
         { 
             new SimpleLoopTest(),
-            new SimpleCalculationsSync(),
-            new SimpleCalculationsAsync(),
+            new RandomizingTest(),
+            new SimpleCalculationsSyncTest(),
+            new SimpleCalculationsAsyncTest(),
             new HeavySyncCalculationsTest(),
             new HeavyAsyncCalculationsTest(),
             new SimpleDatabaseInsertionTest(),

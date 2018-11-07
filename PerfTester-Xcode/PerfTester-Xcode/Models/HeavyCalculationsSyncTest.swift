@@ -27,7 +27,7 @@ class HeavyCalculationsSyncTest : Test {
     }
     
     override func doJob(param: Double) {
-        for _ in 0...Int(param) {
+        for _ in 1...Int(param) {
             let testArr: [Double] = [32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535]
             var _ = multiplyArray(testArr)
         }
@@ -36,7 +36,7 @@ class HeavyCalculationsSyncTest : Test {
     
     private func multiplyArray(_ array: [Double]) -> [Double] {
         var finArr = [Double](repeating: 0, count: array.count)
-        for i in 0...array.count-1 {
+        for i in 1...array.count-1 {
             finArr[i] = array[i] * array[i]
         }
         return finArr

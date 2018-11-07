@@ -251,8 +251,8 @@
     <Compile Include="Helpers\CSVHelper.cs" />
     <Compile Include="Models\ComplexDatabaseInsertionTest.cs" />
     <Compile Include="Models\Helpers\Toy.cs" />
-    <Compile Include="Models\SimpleCalculationsSync.cs" />
-    <Compile Include="Models\SimpleCalculationsAsync.cs" />
+    <Compile Include="Models\SimpleCalculationsSyncTest.cs" />
+    <Compile Include="Models\SimpleCalculationsAsyncTest.cs" />
     <Compile Include="Models\AssetLoadingTest.cs" />
     <Compile Include="Models\Helpers\ComplicatedController.cs" />
     <Compile Include="Models\LoadingControllerTest.cs" />
@@ -261,6 +261,7 @@
     <Compile Include="Models\UserDefaultsSaveTest.cs" />
     <Compile Include="Models\UserDefaultsLoadTest.cs" />
     <Compile Include="Models\SimpleDatabaseLoadingTest.cs" />
+    <Compile Include="Models\RandomizingTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Assets\Asset64.png" />

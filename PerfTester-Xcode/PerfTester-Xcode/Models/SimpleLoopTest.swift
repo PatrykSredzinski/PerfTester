@@ -27,7 +27,7 @@ class SimpleLoopTest: Test {
     }
     
     override func doJob(param: Double) {
-        for _ in 0...Int(param) {
+        for _ in 1...Int(param) {
         }
         super.finishJob(param: param)
     }

@@ -3,7 +3,7 @@ using CoreFoundation;
 
 namespace PerfTesterXamarin.Models
 {
-    public class SimpleCalculationsAsync : Test
+    public class SimpleCalculationsAsyncTest : Test
     {
         public override string Title => "Simple Async Calculations";
         public override string Desc => "Multiplying doubles of different sign in background N times";

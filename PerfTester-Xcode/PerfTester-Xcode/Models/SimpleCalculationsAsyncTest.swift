@@ -28,7 +28,7 @@ class SimpleCalculationsAsyncTest: Test {
     
     override func doJob(param: Double) {
         DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
-            for _ in 0...Int(param) {
+            for _ in 1...Int(param) {
                 let d1 = 53425472.124532 * -3213245.8356
                 let d2 = d1 * -415.122364
                 let _ = d2 * 92631.23343
