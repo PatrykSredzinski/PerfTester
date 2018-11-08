@@ -725,7 +725,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 04C60B8B137665C54410DD92 /* Pods-PerfTester-Xcode.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-REL";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V25VEFSA58;
 				INFOPLIST_FILE = "$(SRCROOT)/PerfTester-Xcode/Info.plist";
@@ -743,7 +743,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB7358AB7E4F0833145CCA31 /* Pods-PerfTester-Xcode.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-REL";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V25VEFSA58;
 				INFOPLIST_FILE = "$(SRCROOT)/PerfTester-Xcode/Info.plist";
