@@ -32,12 +32,16 @@ namespace PerfTesterXamarin.Helpers
             var dateFormatter = new NSDateFormatter();
             dateFormatter.DateFormat = "yyyy-MM-dd";
             var dateString = dateFormatter.ToString(date);
-            return String.Format("Xamar-{0}-{1}.csv", dateString, test.Title);
+            var buildType = "REL";
+#if DEBUG
+            buildType = "DEB";
+#endif
+            return String.Format("VStud-{0} {1} {2}.csv", buildType, dateString, test.Title);
         }
 
         static String ParseResultsIntoString(Test test)
         {
-            String finString = "Variant,Time\n";
+            String finString = "Variant,Time [ms]\n";
             for (var i = 0; i < test.Parameters.Length; i++)
             {
                 var variant = i < test.Parameters.Length ? test.Parameters[i] : 0;

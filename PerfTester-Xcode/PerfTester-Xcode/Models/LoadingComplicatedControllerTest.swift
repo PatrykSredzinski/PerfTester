@@ -12,7 +12,7 @@ class LoadingComplicatedControllerTest: Test, ComplicatedControllerDelegate {
     
     override init() {
         super.init()
-        title = "Loading Controller Test"
+        title = "Loading Complicated Controller Test"
         desc = "Loading a complicated view controller with AutoLayout and pushing it on a navigation stack"
         imageName = "Phone"
         parameters = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 150, 200, 250]

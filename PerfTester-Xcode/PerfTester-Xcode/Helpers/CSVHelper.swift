@@ -29,12 +29,16 @@ class CSVHelper {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateString = dateFormatter.string(from: date)
-        return String(format: "Xcode-%@-%@.csv", dateString, test.title)
+        var buildType = "REL"
+        #if DEBUG
+            buildType = "DEB"
+        #endif
+        return String(format: "Xcode-%@ %@ %@.csv",buildType, dateString, test.title)
     }
     
     fileprivate static func parseResultsIntoString(test: Test) -> String {
         
-        var finString = "Variant,Time\n"
+        var finString = "Variant,Time [ms]\n"
         
         for i in 0...test.parameters.count-1 {
             let variant = i < test.parameters.count ? test.parameters[i] : 0

@@ -6,7 +6,7 @@ namespace PerfTesterXamarin.Models
 {
     public class LoadingComplicatedControllerTest : Test, ComplicatedControllerDelegate
     {
-        public override string Title => "Loading Controller Test";
+        public override string Title => "Loading Complicated Controller Test";
         public override string Desc => "Loading a complicated view controller with AutoLayout and pushing it on a navigation stack";
         public override string ImageName => "Phone";
         public override double[] Parameters => new double[] { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 150, 200, 250 };
