@@ -30,16 +30,16 @@ namespace PerfTesterXamarin.Screens.MainTabBar
 
         private void SetupControllers()
         {
-            var homeCtrl = new HomeController();
-            var homeNav = new UINavigationController(homeCtrl);
-            homeNav.TabBarItem.SelectedImage = UIImage.FromBundle("HomeActive");
-            homeNav.TabBarItem.Image = UIImage.FromBundle("HomeDefault");
-            homeNav.TabBarItem.Title = "";
-            homeNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
-            homeNav.NavigationBar.Translucent = false;
-            homeNav.NavigationBar.BarTintColor = MainColor;
-            homeNav.NavigationBar.TintColor = UIColor.White;
-            homeNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
+            //var homeCtrl = new HomeController();
+            //var homeNav = new UINavigationController(homeCtrl);
+            //homeNav.TabBarItem.SelectedImage = UIImage.FromBundle("HomeActive");
+            //homeNav.TabBarItem.Image = UIImage.FromBundle("HomeDefault");
+            //homeNav.TabBarItem.Title = "";
+            //homeNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
+            //homeNav.NavigationBar.Translucent = false;
+            //homeNav.NavigationBar.BarTintColor = MainColor;
+            //homeNav.NavigationBar.TintColor = UIColor.White;
+            //homeNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
             var testListCtrl = new TestListController();
             var testListNav = new UINavigationController(testListCtrl);
@@ -52,21 +52,21 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             testListNav.NavigationBar.TintColor = UIColor.White;
             testListNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
-            var infoCtrl = new InfoController();
-            var infoNav = new UINavigationController(infoCtrl);
-            infoNav.TabBarItem.SelectedImage = UIImage.FromBundle("UserActive");
-            infoNav.TabBarItem.Image = UIImage.FromBundle("UserDefault");
-            infoNav.TabBarItem.Title = "";
-            infoNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
-            infoNav.NavigationBar.Translucent = false;
-            infoNav.NavigationBar.BarTintColor = MainColor;
-            infoNav.NavigationBar.TintColor = UIColor.White;
-            infoNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
+            //var infoCtrl = new InfoController();
+            //var infoNav = new UINavigationController(infoCtrl);
+            //infoNav.TabBarItem.SelectedImage = UIImage.FromBundle("UserActive");
+            //infoNav.TabBarItem.Image = UIImage.FromBundle("UserDefault");
+            //infoNav.TabBarItem.Title = "";
+            //infoNav.TabBarItem.ImageInsets = new UIEdgeInsets(6, 0, -6, 0);
+            //infoNav.NavigationBar.Translucent = false;
+            //infoNav.NavigationBar.BarTintColor = MainColor;
+            //infoNav.NavigationBar.TintColor = UIColor.White;
+            //infoNav.NavigationBar.TitleTextAttributes = new UIStringAttributes() { ForegroundColor = UIColor.White };
 
-            var navControllers = new UINavigationController[] { homeNav, testListNav, infoNav};
+            var navControllers = new UINavigationController[] { testListNav };
             base.ViewControllers = navControllers;
 
-            base.SelectedIndex = 1;
+            //base.SelectedIndex = 1;
         }
     }
 }

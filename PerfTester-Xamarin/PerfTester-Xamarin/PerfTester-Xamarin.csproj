@@ -29,7 +29,6 @@
     <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
-    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -41,7 +40,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
     <MtouchDebug>false</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -78,7 +77,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>VS: private.PerfTester-VisualStudio Development</CodesignProvision>
+    <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -151,13 +150,15 @@
     <ImageAsset Include="Assets.xcassets\Clock.imageset\clock.png" />
     <ImageAsset Include="Assets.xcassets\Calculator.imageset\calculator.png" />
     <ImageAsset Include="Assets.xcassets\Arrow.imageset\arrow.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\visual.png" />
     <ImageAsset Include="Assets.xcassets\UserDefault.imageset\icons8-kontakty-40.png" />
     <ImageAsset Include="Assets.xcassets\UserActive.imageset\icons8-kontakty-filled-40.png" />
     <ImageAsset Include="Assets.xcassets\TestDefault.imageset\icons8-test-zaliczony-40.png" />
     <ImageAsset Include="Assets.xcassets\TestActive.imageset\icons8-test-zaliczony-filled-40.png" />
     <ImageAsset Include="Assets.xcassets\HomeDefault.imageset\icons8-chata-40.png" />
     <ImageAsset Include="Assets.xcassets\HomeActive.imageset\icons8-chata-filled-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\xcode-5.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-REL.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon-REL.appiconset\visual.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Screens\" />
@@ -193,6 +194,7 @@
     <Folder Include="Assets.xcassets\Stoper.imageset\" />
     <Folder Include="Helpers\" />
     <Folder Include="Assets\" />
+    <Folder Include="Assets.xcassets\AppIcon-REL.appiconset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -204,10 +206,16 @@
     <InterfaceDefinition Include="Screens\TestDetails\Cells\TestDetailsCell.xib" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
     <None Include="FodyWeavers.xml" />
+    <None Include="Info-REL.plist" Condition="'$(Configuration)' == 'Release'">
+      <LogicalName>Info.plist</LogicalName>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Info.plist" Condition="'$(Configuration)' != 'Release'">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

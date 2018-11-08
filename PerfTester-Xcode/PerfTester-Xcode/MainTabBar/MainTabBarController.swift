@@ -25,15 +25,15 @@ class MainTabBarController: UITabBarController {
     }
     
     private func setupControllers() {
-        let homeCtrl = HomeController()
-        let homeNav = UINavigationController(rootViewController: homeCtrl)
-        homeNav.tabBarItem.selectedImage = UIImage(named: "HomeActive")
-        homeNav.tabBarItem.image = UIImage(named: "HomeDefault")
-        homeNav.tabBarItem.title = ""
-        homeNav.tabBarItem.imageInsets = UIEdgeInsets.init(top: 6, left: 0, bottom: -6, right: 0)
-        homeNav.navigationBar.isTranslucent = false
-        homeNav.navigationBar.barTintColor = MainTabBarController.mainColor
-        homeNav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+//        let homeCtrl = HomeController()
+//        let homeNav = UINavigationController(rootViewController: homeCtrl)
+//        homeNav.tabBarItem.selectedImage = UIImage(named: "HomeActive")
+//        homeNav.tabBarItem.image = UIImage(named: "HomeDefault")
+//        homeNav.tabBarItem.title = ""
+//        homeNav.tabBarItem.imageInsets = UIEdgeInsets.init(top: 6, left: 0, bottom: -6, right: 0)
+//        homeNav.navigationBar.isTranslucent = false
+//        homeNav.navigationBar.barTintColor = MainTabBarController.mainColor
+//        homeNav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
 
         let testListCtrl = TestListController()
         let testListNav = UINavigationController(rootViewController: testListCtrl)
@@ -46,21 +46,21 @@ class MainTabBarController: UITabBarController {
         testListNav.navigationBar.tintColor = UIColor.white
         testListNav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
 
-        let infoCtrl = InfoController()
-        let infoNav = UINavigationController(rootViewController: infoCtrl)
-        infoNav.tabBarItem.selectedImage = UIImage(named: "UserActive")
-        infoNav.tabBarItem.image = UIImage(named: "UserDefault")
-        infoNav.tabBarItem.title = ""
-        infoNav.tabBarItem.imageInsets = UIEdgeInsets.init(top: 6, left: 0, bottom: -6, right: 0)
-        infoNav.navigationBar.isTranslucent = false
-        infoNav.navigationBar.barTintColor = MainTabBarController.mainColor
-        infoNav.navigationBar.tintColor = UIColor.white
-        infoNav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+//        let infoCtrl = InfoController()
+//        let infoNav = UINavigationController(rootViewController: infoCtrl)
+//        infoNav.tabBarItem.selectedImage = UIImage(named: "UserActive")
+//        infoNav.tabBarItem.image = UIImage(named: "UserDefault")
+//        infoNav.tabBarItem.title = ""
+//        infoNav.tabBarItem.imageInsets = UIEdgeInsets.init(top: 6, left: 0, bottom: -6, right: 0)
+//        infoNav.navigationBar.isTranslucent = false
+//        infoNav.navigationBar.barTintColor = MainTabBarController.mainColor
+//        infoNav.navigationBar.tintColor = UIColor.white
+//        infoNav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
 
-        let navControllers = [homeNav, testListNav, infoNav]
+        let navControllers = [testListNav]
         viewControllers = navControllers
         
-        selectedIndex = 1
+//        selectedIndex = 1
     }
 
 }
