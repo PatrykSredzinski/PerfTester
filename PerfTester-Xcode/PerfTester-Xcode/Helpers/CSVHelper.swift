@@ -10,42 +10,54 @@ import UIKit
 
 class CSVHelper {
 
-    static let defaultIP = "10.12.141.70:8080"
+    static let defaultIP = "10.12.141.26:8080"
 
     static func saveTestResults(test: Test) {
         getIPFromAlert() { ip in
             let fileName = getFileName(test: test)
+            let parsedHeaders = parseHeadersIntoString(test: test)
             let parsedData = parseResultsIntoString(test: test)
-            let stringUrl = "http://\(ip)/export.php?name=\(fileName)&data=\(parsedData)"
-            let encodedUrl = stringUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-            if let urlSet = URL(string: encodedUrl ?? "") {
+            let headersUrl = "http://\(ip)/EXPORT_HEADER.php?name=\(fileName)&data=\(parsedHeaders)"
+            let dataUrl = "http://\(ip)/EXPORT_DATA.php?name=\(fileName)&data=\(parsedData)"
+            let encodedHeadersUrl = headersUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            let encodedDataUrl = dataUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
+            if let urlSet = URL(string: encodedHeadersUrl ?? "") {
                 URLSession.shared.dataTask(with: urlSet).resume()
+                URLSession.shared.dataTask(with: urlSet, completionHandler: { _,_,_ in
+                    if let urlSet = URL(string: encodedDataUrl ?? "") {
+                        URLSession.shared.dataTask(with: urlSet).resume()
+                    }
+                }).resume()
             }
         }
     }
     
     fileprivate static func getFileName(test: Test) -> String {
-        let date = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateString = dateFormatter.string(from: date)
-        var buildType = "REL"
-        #if DEBUG
-            buildType = "DEB"
-        #endif
-        return String(format: "Xcode-%@ %@ %@.csv",buildType, dateString, test.title)
+        return String(format: "%@.csv", test.title)
+    }
+    
+    fileprivate static func parseHeadersIntoString(test: Test) -> String {
+        var finString = "Variant"
+        for i in 0...test.parameters.count-1 {
+            let variant = i < test.parameters.count ? test.parameters[i] : 0
+            finString = finString.appendingFormat(",%d", Int(round(variant)))
+        }
+        finString = finString.appending("\n")
+        return finString
     }
     
     fileprivate static func parseResultsIntoString(test: Test) -> String {
-        
-        var finString = "Variant,Time [ms]\n"
-        
+        var finString = "Xcode - "
+        var buildType = "REL"
+        #if DEBUG
+            buildType = "DBG"
+        #endif
+        finString = finString.appending(buildType)
         for i in 0...test.parameters.count-1 {
-            let variant = i < test.parameters.count ? test.parameters[i] : 0
             let result = i < test.results.count ? test.results[i] : 0
-            finString = finString.appendingFormat("%d,%d\n", Int(round(variant)), Int(round(result)))
+            finString = finString.appendingFormat(",%d", Int(round(result)))
         }
-        
+        finString = finString.appending("\n")
         return finString
     }
     

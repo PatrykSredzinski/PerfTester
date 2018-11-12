@@ -8,19 +8,29 @@ namespace PerfTesterXamarin.Helpers
 {
     public class CSVHelper
     {
-        static string defaultIP = "10.12.141.70:8080";
+        static string defaultIP = "10.12.141.26:8080";
         public static void SaveTestResults(Test test)
         {
-            GetIPFromAlert((ip) => 
+            GetIPFromAlert((ip) =>
             {
                 var fileName = GetFileName(test);
+                var parsedHeaders = ParseHeadersIntoString(test);
                 var parsedData = ParseResultsIntoString(test);
-                var stringUrl = String.Format("http://{0}/export.php?name={1}&data={2}", defaultIP, fileName, parsedData);
-                var uri = new Uri(stringUrl);
-                var urlSet = new NSUrl(uri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
-                if (urlSet != null)
+                var headersUrl = String.Format("http://{0}/EXPORT_HEADER.php?name={1}&data={2}", defaultIP, fileName, parsedHeaders);
+                var dataUrl = String.Format("http://{0}/EXPORT_DATA.php?name={1}&data={2}", defaultIP, fileName, parsedData);
+                var headersUri = new Uri(headersUrl);
+                var dataUri = new Uri(dataUrl);
+                var headersSet = new NSUrl(headersUri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
+                var dataSet = new NSUrl(dataUri.GetComponents(UriComponents.HttpRequestUrl, UriFormat.UriEscaped));
+                if (headersSet != null)
                 {
-                    NSUrlSession.SharedSession.CreateDataTask(new NSUrlRequest(urlSet)).Resume();
+                    NSUrlSession.SharedSession.CreateDataTask(new NSUrlRequest(headersSet), (data, response, error) =>
+                    {
+                        if (dataSet != null)
+                        {
+                            NSUrlSession.SharedSession.CreateDataTask(new NSUrlRequest(dataSet)).Resume();
+                        }
+                    }).Resume();
                 }
             });
 
@@ -28,26 +38,35 @@ namespace PerfTesterXamarin.Helpers
 
         static string GetFileName(Test test)
         {
-            var date = new NSDate();
-            var dateFormatter = new NSDateFormatter();
-            dateFormatter.DateFormat = "yyyy-MM-dd";
-            var dateString = dateFormatter.ToString(date);
-            var buildType = "REL";
-#if DEBUG
-            buildType = "DEB";
-#endif
-            return String.Format("VStud-{0} {1} {2}.csv", buildType, dateString, test.Title);
+            return String.Format("{0}.csv", test.Title);
+        }
+
+        static String ParseHeadersIntoString(Test test)
+        {
+            String finString = "Variant";
+            for (var i = 0; i < test.Parameters.Length; i++)
+            {
+                var variant = i < test.Parameters.Length ? test.Parameters[i] : 0;
+                finString += String.Format(",{0}", variant);
+            }
+            finString += String.Format("%0A");
+            return finString;
         }
 
         static String ParseResultsIntoString(Test test)
         {
-            String finString = "Variant,Time [ms]\n";
+            String finString = "Visual Studio - ";
+            var buildType = "REL";
+#if DEBUG
+            buildType = "DBG";
+#endif
+            finString += buildType;
             for (var i = 0; i < test.Parameters.Length; i++)
             {
-                var variant = i < test.Parameters.Length ? test.Parameters[i] : 0;
                 var result = i < test.Results.Length ? test.Results[i] : 0;
-                finString += String.Format("{0},{1}\n", variant, result);
+                finString += String.Format(",{0}", result);
             }
+            finString += String.Format("%0A");
             return finString;
         }
 

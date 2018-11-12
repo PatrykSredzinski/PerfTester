@@ -4,9 +4,9 @@ using Realms;
 
 namespace PerfTesterXamarin.Models
 {
-    public class SimpleDatabaseInsertionTest : Test
+    public class SimpleDatabaseInsertingTest : Test
     {
-        public override string Title => "Simple Database Insertion";
+        public override string Title => "Simple Database Inserting";
         public override string Desc => "Inserting N times 2 objects of type Person and Dog related with each other";
         public override string ImageName => "DataBase";
         public override double[] Parameters => new double[] { 1000, 2000, 5000, 10000, 20000, 50000, 100000 };

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Foundation;
 using PerfTesterXamarin.Screens.Home;
 using PerfTesterXamarin.Screens.Info;
 using PerfTesterXamarin.Screens.TestDetails;
@@ -9,6 +11,18 @@ namespace PerfTesterXamarin.Screens.MainTabBar
     public partial class MainTabBarController : UITabBarController
     {
         public static UIColor MainColor => new UIColor(red: 0.5f, green: 0.1f, blue: 0.7f, alpha: 1f);
+        UILabel BuildDateLabel = new UILabel();
+
+        string getCompileDateString()
+        {
+            DateTime creationDate = File.GetCreationTime("Info.plist");
+            DateTime reference = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(2001, 1, 1, 0, 0, 0));
+            NSDate infoDate = NSDate.FromTimeIntervalSinceReferenceDate(
+                (creationDate - reference).TotalSeconds);
+            NSDateFormatter dF = new NSDateFormatter();
+            dF.DateFormat = "HH:mm:ss | dd.MM.yyyy";
+            return dF.StringFor(infoDate);
+        }
 
         public MainTabBarController() : base("MainTabBarController", null)
         {
@@ -26,6 +40,16 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             base.TabBar.Translucent = false;
             base.TabBar.TintColor = UIColor.White;
             base.TabBar.BarTintColor = MainColor;
+
+            BuildDateLabel.Text = String.Format("Compiled: {0}", getCompileDateString());
+            BuildDateLabel.TextColor = UIColor.White;
+            BuildDateLabel.TextAlignment = UITextAlignment.Right;
+            BuildDateLabel.Font = UIFont.BoldSystemFontOfSize(10);
+            TabBar.AddSubview(BuildDateLabel);
+            BuildDateLabel.TranslatesAutoresizingMaskIntoConstraints = false;
+            BuildDateLabel.BottomAnchor.ConstraintEqualTo(TabBar.SafeAreaLayoutGuide.BottomAnchor).Active = true;
+            BuildDateLabel.LeadingAnchor.ConstraintEqualTo(TabBar.LeadingAnchor).Active = true;
+            BuildDateLabel.TrailingAnchor.ConstraintEqualTo(TabBar.TrailingAnchor).Active = true;
         }
 
         private void SetupControllers()

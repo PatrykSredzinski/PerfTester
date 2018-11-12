@@ -248,7 +248,7 @@
     <Compile Include="Screens\TestList\TestListViewModel.cs" />
     <Compile Include="Models\HeavySyncCalculationsTest.cs" />
     <Compile Include="Models\HeavyAsyncCalculationsTest.cs" />
-    <Compile Include="Models\SimpleDatabaseInsertionTest.cs" />
+    <Compile Include="Models\SimpleDatabaseInsertingTest.cs" />
     <Compile Include="Models\Helpers\Dog.cs" />
     <Compile Include="Models\Helpers\Person.cs" />
     <Compile Include="Screens\TestDetails\Cells\TestDetailsCell.cs" />
@@ -257,7 +257,7 @@
     </Compile>
     <Compile Include="Models\SimpleLoopTest.cs" />
     <Compile Include="Helpers\CSVHelper.cs" />
-    <Compile Include="Models\ComplexDatabaseInsertionTest.cs" />
+    <Compile Include="Models\ComplexDatabaseInsertingTest.cs" />
     <Compile Include="Models\Helpers\Toy.cs" />
     <Compile Include="Models\SimpleCalculationsSyncTest.cs" />
     <Compile Include="Models\SimpleCalculationsAsyncTest.cs" />
@@ -272,6 +272,7 @@
     <Compile Include="Models\RandomizingTest.cs" />
     <Compile Include="Models\JsonDeserializationTest.cs" />
     <Compile Include="Models\Helpers\Employee.cs" />
+    <Compile Include="Models\MultithreadingTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Assets\Asset64.png" />

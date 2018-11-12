@@ -11,6 +11,19 @@ import UIKit
 class MainTabBarController: UITabBarController {
 
     static var mainColor = UIColor(red: 0.1, green: 0.6, blue: 0.8, alpha: 1.0)
+    let buildDateLabel = UILabel()
+    
+    var compileDateString: String {
+        let bundleName = Bundle.main.infoDictionary!["CFBundleName"] as? String ?? "Info.plist"
+        if let infoPath = Bundle.main.path(forResource: bundleName, ofType: nil),
+            let infoAttr = try? FileManager.default.attributesOfItem(atPath: infoPath),
+            let infoDate = infoAttr[FileAttributeKey.creationDate] as? Date {
+            let dF = DateFormatter()
+            dF.dateFormat = "HH:mm:ss | dd.MM.yyyy"
+            return dF.string(from: infoDate)
+        }
+        return "Unknown"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +35,16 @@ class MainTabBarController: UITabBarController {
         tabBar.isTranslucent = false
         tabBar.tintColor = UIColor.white
         tabBar.barTintColor = MainTabBarController.mainColor
+        
+        buildDateLabel.text = "Compiled: \(compileDateString)"
+        buildDateLabel.textColor = .white
+        buildDateLabel.textAlignment = .right
+        buildDateLabel.font = UIFont.boldSystemFont(ofSize: 10)
+        tabBar.addSubview(buildDateLabel)
+        buildDateLabel.translatesAutoresizingMaskIntoConstraints = false
+        buildDateLabel.bottomAnchor.constraint(equalTo: tabBar.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        buildDateLabel.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor).isActive = true
+        buildDateLabel.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor).isActive = true
     }
     
     private func setupControllers() {

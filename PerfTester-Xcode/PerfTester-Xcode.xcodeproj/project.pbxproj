@@ -120,6 +120,8 @@
 		60EA18482191CD9300346815 /* LoadingComplicatedControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */; };
 		60EA184A2191DF1200346815 /* UserDefaultsSaveTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA18492191DF1200346815 /* UserDefaultsSaveTest.swift */; };
 		60EA184C2191E44100346815 /* UserDefaultsLoadTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA184B2191E44100346815 /* UserDefaultsLoadTest.swift */; };
+		60F7FFB82199C4F500309B1C /* MultithreadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F7FFB72199C4F500309B1C /* MultithreadingTest.swift */; };
+		60F7FFB92199C5FE00309B1C /* MultithreadingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F7FFB72199C4F500309B1C /* MultithreadingTest.swift */; };
 		61F398032D6ADC66D23F855B /* Pods_PerfTester_Xcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FCD275BEF917014D96987E /* Pods_PerfTester_Xcode.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +187,7 @@
 		60EA18472191CD9300346815 /* LoadingComplicatedControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComplicatedControllerTest.swift; sourceTree = "<group>"; };
 		60EA18492191DF1200346815 /* UserDefaultsSaveTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSaveTest.swift; sourceTree = "<group>"; };
 		60EA184B2191E44100346815 /* UserDefaultsLoadTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsLoadTest.swift; sourceTree = "<group>"; };
+		60F7FFB72199C4F500309B1C /* MultithreadingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultithreadingTest.swift; sourceTree = "<group>"; };
 		EB7358AB7E4F0833145CCA31 /* Pods-PerfTester-Xcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfTester-Xcode.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerfTester-Xcode/Pods-PerfTester-Xcode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,6 +327,7 @@
 				60EA18492191DF1200346815 /* UserDefaultsSaveTest.swift */,
 				60EA184B2191E44100346815 /* UserDefaultsLoadTest.swift */,
 				6036D27F21930802001F0A42 /* JsonDeserializationTest.swift */,
+				60F7FFB72199C4F500309B1C /* MultithreadingTest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -651,6 +655,7 @@
 				60891D5221946D1600474B86 /* Toy.swift in Sources */,
 				60891D5321946D1600474B86 /* MainTabBarController.swift in Sources */,
 				60891D5421946D1600474B86 /* SimpleDatabaseInsertingTest.swift in Sources */,
+				60F7FFB92199C5FE00309B1C /* MultithreadingTest.swift in Sources */,
 				60891D5521946D1600474B86 /* UserDefaultsLoadTest.swift in Sources */,
 				60891D5621946D1600474B86 /* TestDetailsCell.swift in Sources */,
 				60891D5721946D1600474B86 /* Person.swift in Sources */,
@@ -691,6 +696,7 @@
 				606B77F520E16FBC00871284 /* Toy.swift in Sources */,
 				60CD734820CB164C00EE9115 /* MainTabBarController.swift in Sources */,
 				6042F98920DFB3A200FEF480 /* SimpleDatabaseInsertingTest.swift in Sources */,
+				60F7FFB82199C4F500309B1C /* MultithreadingTest.swift in Sources */,
 				60EA184C2191E44100346815 /* UserDefaultsLoadTest.swift in Sources */,
 				6016CEDB20CBDC4100822F00 /* TestDetailsCell.swift in Sources */,
 				6042F98720DFAFE100FEF480 /* Person.swift in Sources */,
