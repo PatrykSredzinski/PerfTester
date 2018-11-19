@@ -11,7 +11,6 @@ namespace PerfTesterXamarin.Screens.MainTabBar
     public partial class MainTabBarController : UITabBarController
     {
         public static UIColor MainColor => new UIColor(red: 0.5f, green: 0.1f, blue: 0.7f, alpha: 1f);
-        UILabel BuildDateLabel = new UILabel();
 
         string getCompileDateString()
         {
@@ -41,6 +40,7 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             base.TabBar.TintColor = UIColor.White;
             base.TabBar.BarTintColor = MainColor;
 
+            UILabel BuildDateLabel = new UILabel();
             BuildDateLabel.Text = String.Format("Compiled: {0}", getCompileDateString());
             BuildDateLabel.TextColor = UIColor.White;
             BuildDateLabel.TextAlignment = UITextAlignment.Right;
@@ -50,6 +50,21 @@ namespace PerfTesterXamarin.Screens.MainTabBar
             BuildDateLabel.BottomAnchor.ConstraintEqualTo(TabBar.SafeAreaLayoutGuide.BottomAnchor).Active = true;
             BuildDateLabel.LeadingAnchor.ConstraintEqualTo(TabBar.LeadingAnchor).Active = true;
             BuildDateLabel.TrailingAnchor.ConstraintEqualTo(TabBar.TrailingAnchor).Active = true;
+
+            UILabel VersionLabel = new UILabel();
+            String Version = "RELEASE";
+#if DEBUG
+            Version = "DEBUG";
+#endif
+            VersionLabel.Text = String.Format("Version: {0}", Version);
+            VersionLabel.TextColor = UIColor.White;
+            VersionLabel.TextAlignment = UITextAlignment.Left;
+            VersionLabel.Font = UIFont.BoldSystemFontOfSize(10);
+            TabBar.AddSubview(VersionLabel);
+            VersionLabel.TranslatesAutoresizingMaskIntoConstraints = false;
+            VersionLabel.BottomAnchor.ConstraintEqualTo(TabBar.SafeAreaLayoutGuide.BottomAnchor).Active = true;
+            VersionLabel.LeadingAnchor.ConstraintEqualTo(TabBar.LeadingAnchor).Active = true;
+            VersionLabel.TrailingAnchor.ConstraintEqualTo(TabBar.TrailingAnchor).Active = true;
         }
 
         private void SetupControllers()

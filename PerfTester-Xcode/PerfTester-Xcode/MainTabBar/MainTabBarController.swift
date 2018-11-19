@@ -11,7 +11,6 @@ import UIKit
 class MainTabBarController: UITabBarController {
 
     static var mainColor = UIColor(red: 0.1, green: 0.6, blue: 0.8, alpha: 1.0)
-    let buildDateLabel = UILabel()
     
     var compileDateString: String {
         let bundleName = Bundle.main.infoDictionary!["CFBundleName"] as? String ?? "Info.plist"
@@ -36,6 +35,7 @@ class MainTabBarController: UITabBarController {
         tabBar.tintColor = UIColor.white
         tabBar.barTintColor = MainTabBarController.mainColor
         
+        let buildDateLabel = UILabel()
         buildDateLabel.text = "Compiled: \(compileDateString)"
         buildDateLabel.textColor = .white
         buildDateLabel.textAlignment = .right
@@ -45,6 +45,21 @@ class MainTabBarController: UITabBarController {
         buildDateLabel.bottomAnchor.constraint(equalTo: tabBar.safeAreaLayoutGuide.bottomAnchor).isActive = true
         buildDateLabel.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor).isActive = true
         buildDateLabel.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor).isActive = true
+    
+        let versionLabel = UILabel()
+        var version = "RELEASE"
+        #if DEBUG
+        version = "DEBUG"
+        #endif
+        versionLabel.text = "Version: \(version)"
+        versionLabel.textColor = .white
+        versionLabel.textAlignment = .left
+        versionLabel.font = UIFont.boldSystemFont(ofSize: 10)
+        tabBar.addSubview(versionLabel)
+        versionLabel.translatesAutoresizingMaskIntoConstraints = false
+        versionLabel.bottomAnchor.constraint(equalTo: tabBar.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        versionLabel.leadingAnchor.constraint(equalTo: tabBar.leadingAnchor).isActive = true
+        versionLabel.trailingAnchor.constraint(equalTo: tabBar.trailingAnchor).isActive = true
     }
     
     private func setupControllers() {

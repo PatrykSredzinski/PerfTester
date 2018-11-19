@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
-  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7DF27E45-AE28-4594-83FC-22431E7B09A0" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2b737d9cefd8fcf04e32042200d9dad3ca924be5" automaticSigning="False" />
   <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs">
     <Files>
       <File FileName="PerfTester-Xamarin/Models/JsonDeserializationTest.cs" Line="6" Column="22" />
@@ -14,7 +14,7 @@
       <File FileName="PerfTester-Xamarin/Screens/TestList/TestListViewModel.cs" Line="25" Column="37" />
       <File FileName="PerfTester-Xamarin/Models/LoadingControllerTest.cs" Line="9" Column="51" />
       <File FileName="PerfTester-Xamarin/Models/LoadingComplicatedControllerTest.cs" Line="17" Column="48" />
-      <File FileName="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs" Line="67" Column="13" />
+      <File FileName="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs" Line="50" Column="19" />
       <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/12.1.0.15/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="549" Column="3" />
       <File FileName="PerfTester-Xamarin/Info.plist" />
       <File FileName="PerfTester-Xamarin/Info-REL.plist" />
@@ -28,7 +28,7 @@
       <File FileName="PerfTester-Xamarin/Models/HeavyAsyncCalculationsTest.cs" Line="33" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
