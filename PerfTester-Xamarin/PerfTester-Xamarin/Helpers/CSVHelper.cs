@@ -8,7 +8,7 @@ namespace PerfTesterXamarin.Helpers
 {
     public class CSVHelper
     {
-        static string defaultIP = "10.12.141.26:8080";
+        static string defaultIP = "192.168.0.11:8080";
         public static void SaveTestResults(Test test)
         {
             GetIPFromAlert((ip) =>

@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{7FAF8901-4C18-439A-A748-9514ABC36071}|Default">
   <MonoDevelop.Ide.ItemProperties.PerfTester-Xamarin PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.2b737d9cefd8fcf04e32042200d9dad3ca924be5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/MainTabBar/MainTabBarController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTester-Xamarin/Helpers/CSVHelper.cs">
     <Files>
       <File FileName="PerfTester-Xamarin/Models/JsonDeserializationTest.cs" Line="6" Column="22" />
       <File FileName="PerfTester-Xamarin/Models/Helpers/EmployeeDataJSON100.json" Line="1" Column="1" />
@@ -28,7 +28,7 @@
       <File FileName="PerfTester-Xamarin/Models/HeavyAsyncCalculationsTest.cs" Line="33" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

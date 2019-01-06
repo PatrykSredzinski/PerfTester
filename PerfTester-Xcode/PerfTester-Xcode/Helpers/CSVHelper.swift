@@ -10,7 +10,7 @@ import UIKit
 
 class CSVHelper {
 
-    static let defaultIP = "10.12.141.26:8080"
+    static let defaultIP = "192.168.0.11:8080"
 
     static func saveTestResults(test: Test) {
         getIPFromAlert() { ip in
