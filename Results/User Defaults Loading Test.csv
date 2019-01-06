@@ -1,0 +1,5 @@
+Variant,100,200,500,1000,2000,5000
+Xcode - REL,1,1,2,6,8,21
+Xcode - DBG,1,1,3,6,9,24
+Visual Studio - REL,1,1,2,6,8,23
+Visual Studio - DBG,1,1,2,6,9,23
