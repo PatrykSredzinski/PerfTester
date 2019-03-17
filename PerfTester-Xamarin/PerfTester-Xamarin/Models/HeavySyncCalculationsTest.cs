@@ -20,18 +20,18 @@ namespace PerfTesterXamarin.Models
         {
             for (long i = 0; i < param; i++)
             {
-                double[] testArr = new double[] { 32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535 };
-                double[] finArr = MultiplyArray(testArr);
+                List<double> testArr = new List<double> { 32.521, 643.321, 74532.21, 634.12, 0.042021, -532.321, -321.6732, -2213.32535 };
+                List<double> finArr = MultiplyArray(testArr);
             }
             base.FinishJob(param);
         }
 
-        double[] MultiplyArray(double[] array)
+        List<double> MultiplyArray(List<double> array)
         {
-            double[] finArr = new double[array.Length];
-            for (int i = 0; i < array.Length; i++)
+            List<double> finArr = new List<double>();
+            for (int i = 0; i < array.Count; i++)
             {
-                finArr[i] = array[i] * array[i];
+                finArr.Add(array[i] * array[i]);
             }
             return finArr;
         }
